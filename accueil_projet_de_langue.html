@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device_width, initial-scale = 1, viewport-fit = cover"> <!--Pour les mobiles exclusivement-->
+        <meta name = "title" content="La Guerre de Sept Ans">
+        <title>La Guerre de Sept Ans</title> <!-- titre apparaisant sur l'onglet-->
+        <link rel = "stylesheet" href = "CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
+        <link rel="icon" type="image/png" sizes="32x32" href="image/logo_test.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
+        <meta name="description" content="Décrire en quelques lignes l'objet de notre page"> <!-- Description apparaissant sur le moteur de recherche -->
+    </head>
+    <body>
+        <!-- sémantique page d'accueil
+            très épurée : présentation du projet dans les 4 langues en même temps
+        -->
+        <!-- carte
+            -> un répertoire pour chaque langue
+            -> stocker les images dans un seul répertoire
+            -> 
+        -->
+        <!-- target="_blank" : permet d'ouvrir un nouvel onglet-->
+
+        <img src="image/carte_essai.jpg" alt="" usemap="#carte" />
+
+        <map name="carte">
+            <area
+              shape="circle"
+              coords="200,250,200"
+              href="accueil_projet_1a.html"
+              alt="exemple de cercle" />
+          
+            <area
+              shape="rect"
+              coords="10, 5, 20, 15"
+              href=""
+              alt="accueil_projet_1a.html" />
+          </map> <!-- Ca marche ! encore faut-il bien savoir les coordonnées de chaque bâtiment sur la carte ...-->          
+        <script src="JS/accueil.js"> <!--Créer un dossier JS-->
+        </script>
+    </body>
+</html>
