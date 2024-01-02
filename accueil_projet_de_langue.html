@@ -9,32 +9,131 @@
         <link rel="icon" type="image/png" sizes="32x32" href="image/logo_test.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
         <meta name="description" content="Décrire en quelques lignes l'objet de notre page"> <!-- Description apparaissant sur le moteur de recherche -->
     </head>
-    <body>
-        <!-- sémantique page d'accueil
-            très épurée : présentation du projet dans les 4 langues en même temps
-        -->
-        <!-- carte
-            -> un répertoire pour chaque langue
-            -> stocker les images dans un seul répertoire
-            -> 
-        -->
-        <!-- target="_blank" : permet d'ouvrir un nouvel onglet-->
+    <body id="page_home">
+        <nav class="menu"> <!--Rajouter les liens des pages-->
+            <ul>
+              <li><a>Accueil</a></li>
+              <li><a>À propos</a></li>
+              <li><a>Contact</a></li>
+              <li><a>Langage</a></li> 
+            </ul>
+        </nav>
+        <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+            <li><a>Présentation</a>
+                <ul class="depliant1">
+                    <li><a>Introduction</a></li>
+                    <li><a>Mappemonde</a></li>
+                </ul>
+            </li>
+            <li><a>En Europe</a>
+                <ul class="depliant1">
+                    <li><a>Puissances européennes en 1750</a></li>
+                        <ul class="depliant2">
+                            <li><a>Royaume de France</a></li>
+                            <li><a>Royaume de Grande-Bretagne</a></li>
+                            <li><a>Royaume de Prusse</a></li>
+                            <li><a>Empire de Habsbourg</a></li>
+                            <li><a>Saint-Empire Romain Germanique</a></li>
+                            <li><a>Empire de Russie</a></li>
+                            <li><a>Royaume d'Espagne</a></li>
+                            <li><a>Royaume du Portugal</a></li>
+                            <li><a>Royaume de Suède</a></li>
+                            <li><a>République des Deux Nations</a></li>
+                            <li><a>Electorat de Hanovre</a></li>
+                            <li><a>Electorat de Saxe</a></li>
+                        </ul>
+                    <li><a>Relations diplomatiques</a></li>
+                    <li><a>Batailles</a></li>
+                        <ul class="depliant2">
+                            
+                        </ul>
+                    <li><a>Issue régionale</a></li>    
+                        <ul class="depliant2">
+                            
+                        </ul>
+                    <li><a>Impacts de la Guerre de Sept Ans</a></li> 
+                </ul>
+            </li>
+            <li><a>En Amérique du Nord</a>
+                <ul class="depliant1">
+                    <li><a>Contexte</a></li>
+                    <li><a>Les Amérindiens et les puissances colonisatrises</a></li>
+                    <li><a>Les premières escarmouches</a></li>
+                    <!--Rajouter d'autres sections-->
+                </ul>
+            </li>
+            <li><a>En Inde</a>
+                <ul class="depliant1">
+                    <li><a>Les compagnies coloniales européennes</a></li>
+                </ul>
+            </li>
+            <li><a>Le conflit ailleurs dans le monde</a>
+                <ul class="depliant1">
+                    <li><a>Dans l'empire colonial espagnol</a></li>
+                        <ul class = depliant2>
+                            <li><a>aux Philippines</a></li>
+                            <li><a>en Amérique du Sud</a></li>
+                        </ul>
+                    <li><a>au Sénégal</a></li>
+                </ul>
+            </li>
+            <li><a>Evènements contemporains au conflit</a>
+                <ul class="depliant1">
+                    
+                </ul>
+            </li>
+        </nav>
+        <div class="cadre">
+            <h1>La Guerre de Sept Ans</h1>
+            <h2>1756 - 1763</h2>
+            <h3><em>La Guerre de Sept Ans, premier conflit mondial ?</em></h3>
+            <p class = "introduction">Ecrire ici une brève introduction</p>
 
-        <img src="image/carte_essai.jpg" alt="" usemap="#carte" />
+            <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" /> <!--Trouver une carte de petite taille-->
 
-        <map name="carte">
-            <area
-              shape="circle"
-              coords="200,250,200"
-              href="accueil_projet_1a.html"
-              alt="exemple de cercle" />
-          
-            <area
-              shape="rect"
-              coords="10, 5, 20, 15"
-              href=""
-              alt="accueil_projet_1a.html" />
-          </map> <!-- Ca marche ! encore faut-il bien savoir les coordonnées de chaque bâtiment sur la carte ...-->          
+            <map name="monde">
+                <map name="carte">
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Europe-->
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Amérique du Nord-->
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Inde-->
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Amérique du Sud-->
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Philippines-->
+
+                    <area
+                      shape="rect"
+                      coords=""
+                      href=""
+                      alt=""/> <!--Sénégal-->
+
+            </map>
+
+        </div>
+                  
         <script src="JS/accueil.js"> <!--Créer un dossier JS-->
         </script>
     </body>
