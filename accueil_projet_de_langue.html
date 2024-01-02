@@ -15,7 +15,13 @@
               <li><a>Accueil</a></li>
               <li><a>À propos</a></li>
               <li><a>Contact</a></li>
-              <li><a>Langage</a></li> 
+              <li><a>Langage</a>
+                <ul class="depliant_langage">
+                    <li><a href="en/home_page.html">English</a></li>
+                    <li><a href="de/startseite.html">Deustche</a></li>
+                    <li><a href="es/pagina_de_inicio">Español</a></li>
+                </ul>
+            </li> 
             </ul>
         </nav>
         <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
@@ -25,22 +31,22 @@
                     <li><a>Mappemonde</a></li>
                 </ul>
             </li>
-            <li><a>En Europe</a>
+            <li><a href="europe.html">En Europe</a>
                 <ul class="depliant1">
                     <li><a>Puissances européennes en 1750</a></li>
                         <ul class="depliant2">
-                            <li><a>Royaume de France</a></li>
-                            <li><a>Royaume de Grande-Bretagne</a></li>
-                            <li><a>Royaume de Prusse</a></li>
-                            <li><a>Empire de Habsbourg</a></li>
-                            <li><a>Saint-Empire Romain Germanique</a></li>
-                            <li><a>Empire de Russie</a></li>
-                            <li><a>Royaume d'Espagne</a></li>
-                            <li><a>Royaume du Portugal</a></li>
-                            <li><a>Royaume de Suède</a></li>
-                            <li><a>République des Deux Nations</a></li>
-                            <li><a>Electorat de Hanovre</a></li>
-                            <li><a>Electorat de Saxe</a></li>
+                            <li><a href="fr/france.html">Royaume de France</a></li>
+                            <li><a href="fr/grande_bretagne.html">Royaume de Grande-Bretagne</a></li>
+                            <li><a href="fr/prusse.html">Royaume de Prusse</a></li>
+                            <li><a href="fr/habsbourg.html">Empire de Habsbourg</a></li>
+                            <li><a href="fr/saint_empire.html">Saint-Empire Romain Germanique</a></li>
+                            <li><a href="fr/russie.html">Empire de Russie</a></li>
+                            <li><a href="fr/espagne.html">Royaume d'Espagne</a></li>
+                            <li><a href="fr/portugal.html">Royaume du Portugal</a></li>
+                            <li><a href="fr/suede.html">Royaume de Suède</a></li>
+                            <li><a href="fr/pologne.html">République des Deux Nations</a></li>
+                            <li><a href="fr/hanovre.html">Electorat de Hanovre</a></li>
+                            <li><a href="fr/saxe.html">Electorat de Saxe</a></li>
                         </ul>
                     <li><a>Relations diplomatiques</a></li>
                     <li><a>Batailles</a></li>
@@ -54,7 +60,7 @@
                     <li><a>Impacts de la Guerre de Sept Ans</a></li> 
                 </ul>
             </li>
-            <li><a>En Amérique du Nord</a>
+            <li><a href="amerique_nord.html">En Amérique du Nord</a>
                 <ul class="depliant1">
                     <li><a>Contexte</a></li>
                     <li><a>Les Amérindiens et les puissances colonisatrises</a></li>
@@ -62,7 +68,7 @@
                     <!--Rajouter d'autres sections-->
                 </ul>
             </li>
-            <li><a>En Inde</a>
+            <li><a href="inde.html">En Inde</a>
                 <ul class="depliant1">
                     <li><a>Les compagnies coloniales européennes</a></li>
                 </ul>
@@ -71,10 +77,10 @@
                 <ul class="depliant1">
                     <li><a>Dans l'empire colonial espagnol</a></li>
                         <ul class = depliant2>
-                            <li><a>aux Philippines</a></li>
-                            <li><a>en Amérique du Sud</a></li>
+                            <li><a href="philippines.html">aux Philippines</a></li>
+                            <li><a href="amerique_sud_antilles.html">en Amérique du Sud et aux Antilles</a></li>
                         </ul>
-                    <li><a>au Sénégal</a></li>
+                    <li><a href="senegal.html">au Sénégal</a></li>
                 </ul>
             </li>
             <li><a>Evènements contemporains au conflit</a>
@@ -91,44 +97,49 @@
 
             <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" /> <!--Trouver une carte de petite taille-->
 
-            <map name="monde">
-                <map name="carte">
+            <map name="mappemonde">
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Europe-->
+                      coords="801,345,963,497"
+                      href="fr/europe.html"
+                      alt="Europe"/> <!--Europe-->
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Amérique du Nord-->
+                      coords="446,400,591,536"
+                      href="fr/amerique_nord.html"
+                      alt="Amérique du Nord"/> <!--Amérique du Nord-->
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Inde-->
+                      coords="1106,517,1267,673"
+                      href="fr/inde.html"
+                      alt="Inde"/> <!--Inde-->
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Amérique du Sud-->
+                      coords="536,613,623,690"
+                      href="fr/amerique_sud_antilles.html"
+                      alt="Amérique du Sud et Antilles"/> <!--Amérique du Sud et Antilles-->
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Philippines-->
+                      coords="1336,588,1401,655"
+                      href="fr/philippines.html"
+                      alt="Philippines"/> <!--Philippines-->
 
                     <area
+                    class = "zone_grise"
                       shape="rect"
-                      coords=""
-                      href=""
-                      alt=""/> <!--Sénégal-->
+                      coords="751,559,828,637"
+                      href="fr/senegal.html"
+                      alt="Sénégal"/> <!--Sénégal-->
 
             </map>
 
