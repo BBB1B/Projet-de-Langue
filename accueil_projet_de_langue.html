@@ -2,7 +2,7 @@
  
 <!--Tryptique pour passer de local à remote :
 git add .
-git commit -m "commentaire à la con"
+git commit -m "commentaire"
 git push
 -->
 
@@ -20,8 +20,9 @@ git push
 
         <!--Menu en tête de site-->
 
-        <nav class="menu"> <!--Rajouter les liens des pages-->
-            <ul>
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
               <li><a href="accueil_projet_de_langue.html">Accueil</a></li>
               <li><a href="fr/a_propos.html">À propos</a></li>
               <li><a href="fr/contact.html">Contact</a></li>
@@ -32,30 +33,27 @@ git push
                     <li><a href="de/startseite.html">Deustche</a></li>
                     <li><a href="es/pagina_de_inicio.html">Español</a></li>
                 </ul> 
+              </li>
             </ul>
         </nav>
 
         <!--menu latéral -->
 
-        <div class="menu_lateral">
-
-            <div class="titre-menu">
-
-                <h3>Menu</h3>
-
-            </div>
+        <div class="flanc_droit">
+        
+        <img src="image/menu.png"  class="image_menu"/> 
 
         <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
-            <li><a href="accueil_projet_de_langue.html">Présentation</a>
-                <ul class="depliant_presentation">
+            <li class="presentation"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="accueil_projet_de_langue.html">   Présentation</a>
+                <ul class="niveau1">
                     <li><a href="#introduction">Introduction</a></li>
                     <li><a href="#carte">Mappemonde</a></li>
                 </ul>
             </li>
-            <li><a href="fr/europe.html">En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
-                <ul class="depliant_europe">
-                    <li><a href="fr/europe/puissances.html">Puissances européennes en 1750</a>
-                        <ul class="depliant_puissances">
+            <li  class="europe"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+                <ul class="niveau1">
+                    <li><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/europe/puissances.html">   Puissances européennes en 1750</a>
+                        <ul class="niveau2">
                             <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
                             <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
                             <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
@@ -70,16 +68,16 @@ git push
                             <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
                         </ul>
                     </li>
-                    <li><a href = "fr/europe/diplomatie.html">Relations diplomatiques</a>
-                        <ul class="depliant_diplomatie">
+                    <li class="diplomatie"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/europe/diplomatie.html">   Relations diplomatiques</a>
+                        <ul class="niveau2">
                             <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
                             <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
                             <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
                             <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
                         </ul>
                     </li>
-                    <li><a href = "fr/europe/episodes.html">Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
-                        <ul class="depliant_episodes">
+                    <li class="episodes"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                        <ul class="niveau2" >
                             <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
                                 <!--
                                 <ul class="depliant3">
@@ -142,38 +140,38 @@ git push
                     </li>
                 </ul>
             </li>
-            <li><a href="fr/amerique_nord.html">En Amérique du Nord</a>
-                <ul class="depliant_amerique">
+            <li  class="amerique"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/amerique_nord.html">   En Amérique du Nord</a>
+                <ul class="niveau1">
                     <li><a href="fr/amerique/contexte_amerique.html">Contexte</a></li>
                     <li><a href="fr/amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
                     <li><a href="fr/amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
                 </ul>
             </li>
-            <li><a href="fr/inde.html">En Inde</a>
-                <ul class="depliant_inde">
+            <li class="amerique"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/inde.html">   En Inde</a>
+                <ul class="niveau1">
                     <li><a href="fr/inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
                     <li><a href="fr/inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
                 </ul>
             </li>
-            <li><a href="fr/ailleurs.html">Le conflit ailleurs dans le monde</a>
-                <ul class="depliant_ailleurs">
-                    <li><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
-                        <ul class = "depliant_espagnol">
+            <li  class="ailleurs"><span  class="fleche"><img src = "image/arrow.png"/></span>><a href="fr/ailleurs.html">   Le conflit ailleurs dans le monde</a>
+                <ul class="niveau1">
+                    <li><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                        <ul class = "niveau2">
                             <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
                             <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
                         </ul>
                     <li><a href="fr/ailleurs.html/#senegal">au Sénégal</a></li>
                 </ul>
             </li>
-            <li><a href = "fr/issue.html">Issue</a>   
-                <ul class="depliant_issue">
+            <li  class="issue"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/issue.html">   Issue</a>   
+                <ul class="niveau1">
                     <li><a href = "fr/issue.html/#paris">Traité de Paris</a></li>
                     <li><a href = "fr/issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
                     <li><a href = "fr/issue.html/#hambourg">Traité de Hambourg</a></li>
                 </ul>
             </li> 
-            <li><a href ="fr/impacts.html">Impacts de la Guerre de Sept Ans</a>
-                <ul class="depliant_impacts">
+            <li class="impacts"><span  class="fleche"><img src = "image/arrow.png"/></span><a href ="fr/impacts.html">   Impacts de la Guerre de Sept Ans</a>
+                <ul class="niveau1">
                     <li><a href="fr/impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
                     <li><a href="fr/impacts/culture.html">Dans la culture</li></li>
                 </ul>            
@@ -202,7 +200,7 @@ git push
                     de ce siècle naîtrait dans l’obscurité des forêts canadiennes. Venant d’Angleterre, de France, 
                     d’Allemagne mais aussi de Pologne où des Pays-Bas, les colons européens arrivent massivement 
                     en Nouvelle-France et en Nouvelle-Angleterre, mais peu s’installent loin des côtes. Les espaces
-                     qui entourent la région des Grands Lacs sont pour une large part inhabités par les européens.
+                    qui entourent la région des Grands Lacs sont pour une large part inhabités par les européens.
                 </p>
 
                 <p>
@@ -220,7 +218,7 @@ git push
 
                 <p>
                     Aux confins de la Pennsylvanie, l’administration coloniale britannique entreprend et planifie
-                    depuis 1747 la colonisation de la vallée de la Belle Rivière – Ohio en langue iroquoienne seneca.
+                    depuis 1747 la colonisation de la vallée de la Belle Rivière – <em>Ohio</em> en langue iroquoienne seneca.
                     Elle crée alors la Compagnie de l’Ohio, une entreprise de spéculation foncière, et construit des
                     forts pour protéger les dizaines de familles venant s’installer dans ces plaines fertiles au 
                     climat moins rude que ceux du Québec ou de la Nouvelle-Angleterre. Ces terres sont néanmoins 
@@ -236,7 +234,7 @@ git push
                     européen, issu de la guerre de Succession d’Autriche. L’histoire du début de la guerre de Sept Ans
                     est donc à la fois l’analyse de cet enlisement progressif dans les hostilités mais aussi l’étude
                     de sa propagation ; car dans la lente marche de la mondialisation, ce conflit a toutes les 
-                    caractéristiques d’un conflit mondial, ou du moins mondialisé. Ce sont ces caractéristiques 
+                    caractéristiques d’un conflit mondial, ou du moins <em>mondialisé</em>. Ce sont ces caractéristiques 
                     que ce site tâche de mettre en lumière dans un premier temps.
                 </p>
 
