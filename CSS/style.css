@@ -11,6 +11,7 @@
     margin-right: -10px;
     position: fixed;
     width: 1500px;
+    z-index: 1;
 }
 
 .menu li
@@ -65,6 +66,7 @@
 
 .menu li:hover ul.depliant_langage {
     transform: scale(1);
+    z-index: 4;
 }
 
 /*menu latéral*/
@@ -75,6 +77,7 @@
     margin-right: 30px;
     padding-bottom: 8px;
     position:fixed;
+    z-index: 4;
 }
 
 .menu_deroulant_lateral{
@@ -91,6 +94,7 @@
 .flanc_droit {
     width: 27px;
     height: 27px;
+    z-index: 3;
 }
 
 .flanc_droit .menu_deroulant_lateral {
@@ -106,7 +110,8 @@
     padding-right: 15px;
     max-height: 400px;
     height:fit-content;
-    overflow-y: scroll
+    overflow-y: scroll;
+    z-index: 4;
 }
 
 .flanc_droit:hover .menu_deroulant_lateral{
@@ -129,31 +134,133 @@
 }
 
 .niveau1{
-    transform: scale(0.5);
-    transform-origin: top left;
-    transition: all 500ms linear;
+    transform: scale(0);
+    transition: all 0s ease 300s;
+    width: 190px;
 }
 
-.flanc_droit .menu_deroulant_lateral li {
-    width:275px;
+.flanc_droit .menu_deroulant_lateral li { /*L'état voulu avant le hover*/
+    width:200px;
     margin:0;
+    height:30px;
 }
 
-.flanc_droit .menu_deroulant_lateral>li {
-    height: 30px;
-    transition: height .3s;
+.flanc_droit .menu_deroulant_lateral li { /*L'état voulu après le hover*/
+    width:200px;
+    margin:0;
+    height:fit-content;
 }
 
-
-.fleche img{
+.droite img, .bas img{
     width:15px;
     height:15px;
 }
 
-.flanc_droit .menu_deroulant_lateral span:target{
+button{
+    background: #000000;
+    border: 0;
+}
+/*
+.presentation, .europe, .amerique, .inde, .issue, .impacts{
+    height:fit-content;
+} */
+
+.presentation:hover .niveau1,
+.europe:hover .niveau1,
+.amerique:hover .niveau1,
+.inde:hover .niveau1,
+.ailleurs:hover .niveau1,
+.issue:hover .niveau1,
+.impacts:hover .niveau1
+{
     transform:scale(1);
+    transition-delay: 0s;
 }
 
-.flanc_droit .menu_deroulant_lateral .fleche:hover{
-    height:fit-content;
+/*Cadre principal*/
+
+.cadre{
+    background-color: #000000;
+    opacity: 0.7;
+    display:block;
+    margin-top: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 550px;
+    font-family: sans-serif;
+    padding-top: 40px;
+    z-index: 1;
 }
+
+.cadre h3, .cadre p
+{
+    color:#ffffff;
+}
+
+.cadre h3
+{
+    text-align: center;
+}
+
+.cadre p
+{
+    margin-top: 40px;
+}
+
+.cadre p:last-child{
+    margin-bottom: 60px;
+}
+
+.cadre p:first-child{
+    margin-bottom: 40px;
+}
+
+.cadre map area
+{
+    color:#000000;
+    opacity: 0.4;
+}
+
+rect.hoverable{
+    fill:red;
+    stroke: red;
+    stroke-width: 4;
+    cursor: pointer;
+}
+
+rect.hoverable:hover{
+    fill:red;
+    stroke:red;
+}
+
+
+/*tests concluants !!!*/
+
+.cliquable .svg {
+    fill:rgb(171, 134, 3);
+}
+
+.cliquable{
+    text-align: center;
+    position: relative;
+    background-color: white;
+    margin: 0 8px;
+}
+.cliquable img, .cliquable svg{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.cliquable img{
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.cliquable img.mappemonde{
+    width:688;
+    height:440px;
+}
+

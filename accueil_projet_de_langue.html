@@ -15,6 +15,7 @@ git push
         <link rel = "stylesheet" href = "CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
         <link rel="icon" type="image/png" sizes="32x32" href="image/sablier.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
         <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
+        <script src="JS/script.js"></script>
     </head>
     <body id="page_home">
 
@@ -50,9 +51,15 @@ git push
                     <li><a href="#carte">Mappemonde</a></li>
                 </ul>
             </li>
-            <li  class="europe"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+            <li  class="europe">
+                <button onclick = "Affichern1('europe')" >
+                    <span  id="fleche" class="droite">
+                        <img src = "image/arrow.png"/>
+                    </span>
+                </button>   
+                <a href="fr/europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
                 <ul class="niveau1">
-                    <li><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/europe/puissances.html">   Puissances européennes en 1750</a>
+                    <li><span class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href="fr/europe/puissances.html">   Puissances européennes en 1750</a>
                         <ul class="niveau2">
                             <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
                             <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
@@ -68,7 +75,7 @@ git push
                             <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
                         </ul>
                     </li>
-                    <li class="diplomatie"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/europe/diplomatie.html">   Relations diplomatiques</a>
+                    <li class="diplomatie"><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href = "fr/europe/diplomatie.html">   Relations diplomatiques</a>
                         <ul class="niveau2">
                             <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
                             <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
@@ -76,7 +83,7 @@ git push
                             <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
                         </ul>
                     </li>
-                    <li class="episodes"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                    <li class="episodes"><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href = "fr/europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
                         <ul class="niveau2" >
                             <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
                                 <!--
@@ -140,22 +147,22 @@ git push
                     </li>
                 </ul>
             </li>
-            <li  class="amerique"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/amerique_nord.html">   En Amérique du Nord</a>
+            <li  class="amerique"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="fr/amerique_nord.html">   En Amérique du Nord</a>
                 <ul class="niveau1">
                     <li><a href="fr/amerique/contexte_amerique.html">Contexte</a></li>
                     <li><a href="fr/amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
                     <li><a href="fr/amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
                 </ul>
             </li>
-            <li class="amerique"><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/inde.html">   En Inde</a>
+            <li class="inde"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href="fr/inde.html">   En Inde</a>
                 <ul class="niveau1">
                     <li><a href="fr/inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
                     <li><a href="fr/inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
                 </ul>
             </li>
-            <li  class="ailleurs"><span  class="fleche"><img src = "image/arrow.png"/></span>><a href="fr/ailleurs.html">   Le conflit ailleurs dans le monde</a>
+            <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span>><a href="fr/ailleurs.html">   Le conflit ailleurs dans le monde</a>
                 <ul class="niveau1">
-                    <li><span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                    <li><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
                         <ul class = "niveau2">
                             <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
                             <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
@@ -163,14 +170,14 @@ git push
                     <li><a href="fr/ailleurs.html/#senegal">au Sénégal</a></li>
                 </ul>
             </li>
-            <li  class="issue"><span  class="fleche"><img src = "image/arrow.png"/></span><a href = "fr/issue.html">   Issue</a>   
+            <li  class="issue"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href = "fr/issue.html">   Issue</a>   
                 <ul class="niveau1">
                     <li><a href = "fr/issue.html/#paris">Traité de Paris</a></li>
                     <li><a href = "fr/issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
                     <li><a href = "fr/issue.html/#hambourg">Traité de Hambourg</a></li>
                 </ul>
             </li> 
-            <li class="impacts"><span  class="fleche"><img src = "image/arrow.png"/></span><a href ="fr/impacts.html">   Impacts de la Guerre de Sept Ans</a>
+            <li class="impacts"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span><a href ="fr/impacts.html">   Impacts de la Guerre de Sept Ans</a>
                 <ul class="niveau1">
                     <li><a href="fr/impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
                     <li><a href="fr/impacts/culture.html">Dans la culture</li></li>
@@ -254,59 +261,75 @@ git push
 
             </div>
 
-            <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" id="carte" /> <!--Trouver une carte de petite taille-->
+            <div class="cliquable">
 
-            <map name="mappemonde">
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="801,345,963,497"
-                      href="fr/europe.html"
-                      alt="Europe"/> <!--Europe-->
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="446,400,591,536"
-                      href="fr/amerique_nord.html"
-                      alt="Amérique du Nord"/> <!--Amérique du Nord-->
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="1106,517,1267,673"
-                      href="fr/inde.html"
-                      alt="Inde"/> <!--Inde-->
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="536,613,623,690"
-                      href="fr/ailleurs.html/#amerique_sud_antilles"
-                      alt="Amérique du Sud et Antilles"/> <!--Amérique du Sud et Antilles-->
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="1336,588,1401,655"
-                      href="fr/ailleurs.html/#philippines"
-                      alt="Philippines"/> <!--Philippines-->
-
-                    <area
-                    class = "zone_grise"
-                      shape="rect"
-                      coords="751,559,828,637"
-                      href="fr/ailleurs.html/#senegal"
-                      alt="Sénégal"/> <!--Sénégal-->
-
+                <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" id="carte"/>
+        
+                <map name="mappemonde">
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="320,136,384,192" 
+                          href="fr/europe.html"
+                          alt="Europe"/> <!--Europe-->
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="176,160,240,216" 
+                          href="fr/amerique_nord.html"
+                          alt="Amérique du Nord"/> <!--Amérique du Nord-->
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="440,208,504,264"  
+                          href="fr/inde.html"
+                          alt="Inde"/> <!--Inde-->
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="200,244,228,272"       
+                          href="fr/ailleurs.html/#amerique_sud_antilles"
+                          alt="Amérique du Sud et Antilles"/> <!--Amérique du Sud et Antilles-->
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="536,236,564,264"            
+                          href="fr/ailleurs.html/#philippines"
+                          alt="Philippines"/> <!--Philippines-->
+        
+                        <area
+                        class = "zone_grise"
+                          shape="rect"
+                          coords="300,224,328,252"
+                          href="fr/ailleurs.html/#senegal"
+                          alt="Sénégal"/> <!--Sénégal-->
+        
+                </map>
+        
+                <svg width="688" height="440" class="mappemonde">
+                    <!--<image href="image/mappemonde.png" width="1718" height="1106"/>-->
+        
+                    <rect class="hoverable" x="320" y="136" width="64" height="56" />
+                    <rect class="hoverable" x="176" y="160" width="64" height="56"/>
+                    <rect class="hoverable" x="440" y="208" width="64" height="56"/>
+                    <rect class="hoverable" x="200" y="244" width="28" height="28"/>
+                    <rect class="hoverable" x="536" y="236" width="28" height="28"/>
+                    <rect class="hoverable" x="300" y="224" width="28" height="28"/>
+                </svg>
+        
             </map>
+        
+            </div>
 
         </div>
                   
         <!--Créer un dossier JS-->
 
-        <script src="JS/accueil.js"> 
-        </script>
+
     </body>
 </html>
