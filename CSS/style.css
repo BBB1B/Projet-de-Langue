@@ -1,4 +1,6 @@
 
+/*Il faudra faire un peu de media queries...*/
+
 /* Menu du haut*/
 .menu {
     display:flex;
@@ -11,7 +13,7 @@
     margin-right: -10px;
     position: fixed;
     width: 1500px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu li
@@ -66,7 +68,7 @@
 
 .menu li:hover ul.depliant_langage {
     transform: scale(1);
-    z-index: 4;
+    z-index: 5;
 }
 
 /*menu latéral*/
@@ -77,7 +79,7 @@
     margin-right: 30px;
     padding-bottom: 8px;
     position:fixed;
-    z-index: 4;
+    z-index: 5;
 }
 
 .menu_deroulant_lateral{
@@ -94,7 +96,7 @@
 .flanc_droit {
     width: 27px;
     height: 27px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .flanc_droit .menu_deroulant_lateral {
@@ -111,12 +113,13 @@
     max-height: 400px;
     height:fit-content;
     overflow-y: scroll;
-    z-index: 4;
+    z-index: 5;
 }
 
 .flanc_droit:hover .menu_deroulant_lateral{
     transform: scale(1);
 }
+
 
 .flanc_droit .menu_deroulant_lateral a:hover{
     color:white;
@@ -129,6 +132,15 @@
     color:rgb(168, 168, 168);
 }
 
+span img{
+    width:15px;
+}
+
+span.fleche{
+    height:40px;
+}
+
+/*
 .flanc_droit .menu_deroulant_lateral > a{
     margin: 10px;
 }
@@ -139,13 +151,13 @@
     width: 190px;
 }
 
-.flanc_droit .menu_deroulant_lateral li { /*L'état voulu avant le hover*/
+.flanc_droit .menu_deroulant_lateral li { 
     width:200px;
     margin:0;
     height:30px;
 }
 
-.flanc_droit .menu_deroulant_lateral li { /*L'état voulu après le hover*/
+.flanc_droit .menu_deroulant_lateral li { 
     width:200px;
     margin:0;
     height:fit-content;
@@ -192,7 +204,7 @@ button{
     padding-bottom: 550px;
     font-family: sans-serif;
     padding-top: 40px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cadre h3, .cadre p
@@ -225,15 +237,18 @@ button{
 }
 
 rect.hoverable{
-    fill:red;
-    stroke: red;
-    stroke-width: 4;
+    fill:rgb(255, 0, 0);;
+    stroke-width: 0;
     cursor: pointer;
 }
 
 rect.hoverable:hover{
-    fill:red;
-    stroke:red;
+    fill:rgba(255, 0, 0, 0.5);
+    stroke:rgba(255, 0, 0, 0.5);;
+}
+
+p{
+    text-indent: 40px;
 }
 
 
@@ -256,7 +271,7 @@ rect.hoverable:hover{
 }
 .cliquable img{
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .cliquable img.mappemonde{
@@ -264,3 +279,39 @@ rect.hoverable:hover{
     height:440px;
 }
 
+/*Titre*/
+
+.cadre_titre{
+    z-index:2;
+    text-align: center;
+    margin-top:70px;
+}
+
+.cadre_titre h1{
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    color:white;
+}
+
+.cadre_titre h2{
+    font-family:sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+/*images*/
+
+body#page_home{
+    background-attachment:fixed;
+    background-image: url("fond1.jpg"); 
+    background-size: 100%;
+}
+/*Sonntag*/
+
+.gradient{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: auto;
+}

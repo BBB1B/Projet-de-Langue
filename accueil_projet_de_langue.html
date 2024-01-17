@@ -19,6 +19,16 @@ git push
     </head>
     <body id="page_home">
 
+        <svg width="100%" height="400%" class ="gradient">
+            <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%" >
+                    <stop offset="10%" style="stop-color:rgb(0, 0, 0);stop-opacity:0" />
+                    <stop offset="67%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)" />
+        </svg>
+
         <!--Menu en tête de site-->
 
         <nav> <!--Rajouter les liens des pages-->
@@ -28,7 +38,7 @@ git push
               <li><a href="fr/a_propos.html">À propos</a></li>
               <li><a href="fr/contact.html">Contact</a></li>
               <li><a href="fr/source.html">Sources</a></li>
-              <li><a>Langage</a>
+              <li><a>Langue</a>
                 <ul class="depliant_langage">
                     <li><a href="en/home_page.html">English</a></li>
                     <li><a href="de/startseite.html">Deustche</a></li>
@@ -51,16 +61,10 @@ git push
                     <li><a href="#carte">Mappemonde</a></li>
                 </ul>
             </li>
-            <li  class="europe">
-                <button onclick = "Affichern1('europe')" >
-                    <span  id="fleche" class="droite">
-                        <img src = "image/arrow.png"/>
-                    </span>
-                </button>   
-                <a href="fr/europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+            <li  class="europe">  <span  class="fleche"><img src = "image/arrow.png"/></span><a href="fr/europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
                 <ul class="niveau1">
-                    <li><span class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href="fr/europe/puissances.html">   Puissances européennes en 1750</a>
-                        <ul class="niveau2">
+                    <li><a href="fr/europe/puissances.html">   Puissances européennes en 1750</a>
+                        <!--<ul class="niveau2">
                             <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
                             <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
                             <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
@@ -73,20 +77,19 @@ git push
                             <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
                             <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
                             <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li class="diplomatie"><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href = "fr/europe/diplomatie.html">   Relations diplomatiques</a>
-                        <ul class="niveau2">
+                    <li class="diplomatie"><a href = "fr/europe/diplomatie.html">   Relations diplomatiques</a>
+                        <!--<ul class="niveau2">
                             <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
                             <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
                             <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
                             <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
-                    <li class="episodes"><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href = "fr/europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
-                        <ul class="niveau2" >
+                    <li class="episodes"><a href = "fr/europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                        <!--<ul class="niveau2" >
                             <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
                                     <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
@@ -96,27 +99,20 @@ git push
                                     <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
                                     <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
                                 </ul>
-                                -->
                             </li>
                             <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
                                     <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
                                     <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
                                 </ul>
-                                -->
                             </li>
-                            <li><a href = "fr/europe/episodes.html/#russie_brandebourg">Offensive russe dans le Brandebourg</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
                                     <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
                                 </ul>
-                                -->
                             </li>
                             <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
                                     <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
@@ -124,26 +120,21 @@ git push
                                     <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
                                     <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
                                 </ul>
-                                -->
                             </li>
                             <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
                                     <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
                                     <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
                                     <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
                                 </ul>
-                                -->
                             </li>
                             <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
-                                <!--
                                 <ul class="depliant3">
                                     <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
                                 </ul>
-                                -->
                             </li>
-                        </ul>
+                        </ul>-->
                     </li>
                 </ul>
             </li>
@@ -160,13 +151,13 @@ git push
                     <li><a href="fr/inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
                 </ul>
             </li>
-            <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span>><a href="fr/ailleurs.html">   Le conflit ailleurs dans le monde</a>
+            <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "image/arrow.png"/></span>><a href="fr/ailleurs.html">  Le conflit ailleurs dans le monde</a>
                 <ul class="niveau1">
-                    <li><span  class="fleche" onclick="Affichern2()"><img src = "image/arrow.png"/></span><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
-                        <ul class = "niveau2">
+                    <li><a href="fr/ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                        <!--<ul class = "niveau2">
                             <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
                             <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
-                        </ul>
+                        </ul>-->
                     <li><a href="fr/ailleurs.html/#senegal">au Sénégal</a></li>
                 </ul>
             </li>
@@ -190,10 +181,10 @@ git push
 
         <!--Corps du site -->
 
-        <div classe="cadre_titre"> <!--On mettra ici une belle illustration :) -->
+        <div class="cadre_titre"> 
 
             <h1>La Guerre de Sept Ans</h1>
-            <h2>1756 - 1763</h2>
+            <h2>1754 - 1763</h2>
 
         </div>
 
@@ -255,7 +246,7 @@ git push
                 <p>
                     Pour bien commencer la navigation sur ce site, la mappemonde ci-dessous, datée précisément 
                     de 1754 et dressée par Jacques-Nicolas Bellin, donne une idée détaillée de la perception du 
-                    monde par les européens à cette époque. Cliquez sur les zones grises de la carte indiquant 
+                    monde par les européens à cette époque. Cliquez sur les zones rouges de la carte indiquant 
                     les champs de batailles de la Guerre de Sept Ans.
                 </p>
 

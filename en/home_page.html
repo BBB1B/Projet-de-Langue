@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device_width, initial-scale = 1, viewport-fit = cover"> <!--Pour les mobiles exclusivement-->
+        <meta name = "title" content="The Seven Years War">
+        <title>The Seven Years War</title> <!-- titre apparaisant sur l'onglet-->
+        <link rel = "stylesheet" href = "../CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
+        <link rel="icon" type="../image/png" sizes="32x32" href="../image/sablier.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
+        <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
+        <script src="../JS/script.js"></script>
+    </head>
+    <body id="page_home">
+
+        <svg width="100%" height="400%" class ="gradient">
+            <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%" >
+                    <stop offset="10%" style="stop-color:rgb(0, 0, 0);stop-opacity:0" />
+                    <stop offset="67%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)" />
+        </svg>
+
+        <!--Menu en tête de site-->
+
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
+            <li><a href="home_page.html">Home page</a></li>
+            <li><a href="about.html">About the website</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a>Languages</a>
+                <ul class="depliant_langage">
+                    <li><a href="../accueil_projet_de_langue.html">Français</a></li>
+                    <li><a href="../de/startseite.html">Deustche</a></li>
+                    <li><a href="../es/pagina_de_inicio.html">Español</a></li>
+                </ul> 
+            </li>
+            </ul>
+        </nav>
+
+        <!--menu latéral -->
+
+        <div class="flanc_droit">
+        
+        <img src="../image/menu.png"  class="image_menu"/> 
+
+        <nav class="menu_deroulant_lateral"> 
+            <li class="presentation"><span  class="fleche"><img src = "../image/arrow.png"/></span><a href="home_page.html">   Presentation</a>
+                <ul class="niveau1">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#carte">World map</a></li>
+                </ul>
+            </li>
+            <li  class="europe">  <span  class="fleche"><img src = "../image/arrow.png"/></span><a href="europe.html"> In Europe</a> 
+                <ul class="niveau1">
+                    <li><a href="europe/powers.html">   European powers 1750</a>
+                        <!--<ul class="niveau2">
+                            <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
+                            <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
+                            <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
+                            <li><a href="fr/europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
+                            <li><a href="fr/europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
+                            <li><a href="fr/europe/puissances.html/#russie">Empire de Russie</a></li>
+                            <li><a href="fr/europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
+                            <li><a href="fr/europe/puissances.html/#portugal">Royaume du Portugal</a></li>
+                            <li><a href="fr/europe/puissances.html/#suede">Royaume de Suède</a></li>
+                            <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
+                            <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
+                            <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="diplomatie"><a href = "europe/diplomatic.html">  Diplomatic</a> <!--Note pour moi : diplomacy != diplomatic -->
+                        <!--<ul class="niveau2">
+                            <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
+                            <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
+                            <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
+                            <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="episodes"><a href = "europe/chapters.html">   Chapters of the Seven Years War</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                        <!--<ul class="niveau2" >
+                            <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
+                                </ul>
+                            </li>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
+                                    <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
+                                <ul class="depliant3">
+                                    <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
+                                </ul>
+                            </li>
+                        </ul>-->
+                    </li>
+                </ul>
+            </li>
+            <li  class="amerique"><span  class="fleche" onclick="Affichern1()"><img src = "../image/arrow.png"/></span><a href="north_america.html">   In North America</a>
+                <ul class="niveau1">
+                    <li><a href="america/context_america.html">Context</a></li>
+                    <li><a href="america/belligerents_america.html">The Indians and the Colonisers</a></li>
+                    <li><a href="america/conflicts.html">Conflicts in North America</a></li>
+                </ul>
+            </li>
+            <li class="inde"><span  class="fleche" onclick="Affichern1()"><img src = "../image/arrow.png"/></span><a href="india.html">   In India</a>
+                <ul class="niveau1">
+                    <li><a href="india.html/#compagnies">East India Companies</a></li>
+                    <li><a href="india.html/#deroule">Conflicts in India</a></li>
+                </ul>
+            </li>
+            <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "../image/arrow.png"/></span>><a href="elsewhere.html"> The War elsewhere</a>
+                <ul class="niveau1">
+                    <li><a href="elsewhere.html/#empire_espagnol">In the Spanish Empire</a></li>
+                        <!--<ul class = "niveau2">
+                            <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
+                            <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
+                        </ul>-->
+                    <li><a href="elsewhere.html/#senegal">Around Senegal</a></li>
+                </ul>
+            </li>
+            <li  class="issue"><span  class="fleche" onclick="Affichern1()"><img src = "../image/arrow.png"/></span><a href = "result.html">   Issue</a>   
+                <ul class="niveau1">
+                    <li><a href = "result.html/#paris">Treaty of Paris</a></li>
+                    <li><a href = "result.html/#hubertsbourg">Treaty of Hubertusburg</a></li>
+                    <li><a href = "result.html/#hambourg">Treaty of Hamburg</a></li>
+                </ul>
+            </li> 
+            <li class="impacts"><span  class="fleche" onclick="Affichern1()"><img src = "../image/arrow.png"/></span><a href ="impacts.html">   Impacts of the Seven Years War</a>
+                <ul class="niveau1">
+                    <li><a href="impacts/geopolitics.html">Geopolitical balance reversal</a></li>
+                    <li><a href="impacts/culture.html">In culture</li></li>
+                </ul>            
+            </li>
+            <li><a href = "contemporaneous.html">Events contemporary to the conflict</a></li>
+        </nav>
+
+        </div>
+
+        <!--Corps du site -->
+
+        <div class="cadre_titre"> 
+
+            <h1>The Seven Years War</h1>
+            <h2>1754 - 1763</h2>
+
+        </div>
+
+        <div class="cadre">
+            <h3  id="introduction"><em>Is The Seven Years War the first global conflict?</em></h3>
+
+            <div class = "introduction"> 
+
+                <p>
+                    We are back in 1754. Who could ever imagine one of the largest conflicts of this century
+                    be born into the darkness of the Canadian forests? Coming from England, France, Germany
+                    and even from Poland or the Netherlands, European settlers massively land in New England
+                    and New France, yet only a few goes further in the continent. The land surface surrounding 
+                    the Great Lakes region is mainly uninhabited from a European perspective.
+                </p>
+
+                <p>
+                    It is the Indians who have peopled these lands.
+                </p>
+
+                <p>
+                    Far from forming a homogeneous population, the Indians who have lived there speak diverse languages,
+                    practice miscellaneous ritual and are shaping powerful networks. Besides, they are developing trade
+                    with European trappers and other adventurous settlers. Commercial and diplomatic exchanges are gaining
+                    momentum, still tensions are persisting. They are notably fueled by the current French-English enmity,
+                    but also by the successive spoliations of Indians lands, which are becoming an object of speculation.
+                </p>
+
+                <p>
+                    At the Pennsylvania’s margins, since 1747, the British colonial administration has undertaken and planned 
+                    the colonization of the Ohio river valley. <em>Ohio</em> means “beautiful river” in Seneca, an Iroquoian language.
+                    At that time, it created the Ohio company and have built many fortresses to protect the area; it has organized 
+                    the land speculation on these fertile plains with a relatively soft climate compared to those of Quebec and 
+                    New England. Dozens of families have come to settle in this valley since. Still these lands are also claimed 
+                    by New France, which have built some forts around in retaliation. The first skirmishes will not delay in provoking
+                    a deepening animosity between the two powers, which will spread later in Europe and around the globe.
+                </p>
+
+                <p>
+                    Thus, At the origins of the Seven Years War, also known as <b>the French and Indian War</b> in America, we find 
+                    small clashes in North America. These fights, even if they are not the only responsible, will have disastrous 
+                    effects on the fragile European geopolitical balance, which stems from the War of the Austrian Succession. 
+                    Therefore, the historical study of the beginning of the Seven Years War has two sides. It is on one hand the 
+                    analysis of this sinking into the abyss of the war and on the other hand the review of this spread; owing to the 
+                    fact that in the long march of globalization, this conflict gets all the features of global conflict, or at least 
+                    a <em>globalized</em> conflict. This web site endeavours to highlight those characteristics in the first time. 
+                </p>
+
+                <p>
+                    In the second time, this web site is committed to exhibit the difference and the evolution of the historiographical
+                    point of view of this conflict, as our common perceptions of the Seven Years War have continuously evolved through
+                    two hundred and fifty years of political geopolitical history and diverge following which belligerents bear witness
+                    to this era.
+                </p>
+
+                <p>
+                    To brightly start the browsing, the world map below draws a detailed idea on how do the Europeans perceive the world
+                    at that epoch. The information on this map was collected and compiled in 1754 by the French cartographer Jacques-Nicolas
+                    Bellin. Please click on the red areas, which point out the battlefield of the Seven Years War.
+                </p>
+
+            </div>
+
+            <div class="cliquable">
+
+                <img src="../image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" id="carte"/>
+        
+                <map name="mappemonde">
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="320,136,384,192" 
+                        href="fr/europe.html"
+                        alt="Europe"/> <!--Europe-->
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="176,160,240,216" 
+                        href="fr/amerique_nord.html"
+                        alt="Amérique du Nord"/> <!--Amérique du Nord-->
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="440,208,504,264"  
+                        href="fr/inde.html"
+                        alt="Inde"/> <!--Inde-->
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="200,244,228,272"       
+                        href="fr/ailleurs.html/#amerique_sud_antilles"
+                        alt="Amérique du Sud et Antilles"/> <!--Amérique du Sud et Antilles-->
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="536,236,564,264"            
+                        href="fr/ailleurs.html/#philippines"
+                        alt="Philippines"/> <!--Philippines-->
+        
+                        <area
+                        class = "zone_grise"
+                        shape="rect"
+                        coords="300,224,328,252"
+                        href="fr/ailleurs.html/#senegal"
+                        alt="Sénégal"/> <!--Sénégal-->
+        
+                </map>
+        
+                <svg width="688" height="440" class="mappemonde">
+                    <!--<image href="image/mappemonde.png" width="1718" height="1106"/>-->
+        
+                    <rect class="hoverable" x="320" y="136" width="64" height="56" />
+                    <rect class="hoverable" x="176" y="160" width="64" height="56"/>
+                    <rect class="hoverable" x="440" y="208" width="64" height="56"/>
+                    <rect class="hoverable" x="200" y="244" width="28" height="28"/>
+                    <rect class="hoverable" x="536" y="236" width="28" height="28"/>
+                    <rect class="hoverable" x="300" y="224" width="28" height="28"/>
+                </svg>
+        
+            </map>
+        
+            </div>
+
+        </div>
+                
+        <!--Créer un dossier JS-->
+
+
+    </body>
