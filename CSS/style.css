@@ -195,15 +195,15 @@ button{
     background-color: #000000;
     opacity: 0.7;
     display:block;
-    margin-top: 300px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: justify;
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-bottom: 550px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10%;
     font-family: sans-serif;
-    padding-top: 40px;
+    padding-top: 5%;
     z-index: 2;
 }
 
@@ -236,47 +236,17 @@ button{
     opacity: 0.4;
 }
 
-rect.hoverable{
-    fill:rgb(255, 0, 0);;
-    stroke-width: 0;
-    cursor: pointer;
-}
-
-rect.hoverable:hover{
-    fill:rgba(255, 0, 0, 0.5);
-    stroke:rgba(255, 0, 0, 0.5);;
-}
-
 p{
     text-indent: 40px;
 }
 
-
-/*tests concluants !!!*/
-
-.cliquable .svg {
-    fill:rgb(171, 134, 3);
+p a{
+    text-decoration: none;
+    color:white;
 }
 
-.cliquable{
-    text-align: center;
-    position: relative;
-    background-color: white;
-    margin: 0 8px;
-}
-.cliquable img, .cliquable svg{
-    position: absolute;
-    top:0;
-    left:0;
-}
-.cliquable img{
-    z-index: 2;
-    opacity: 0.7;
-}
-
-.cliquable img.mappemonde{
-    width:688;
-    height:440px;
+p a:hover{
+    color:red;
 }
 
 /*Titre*/
@@ -305,7 +275,9 @@ p{
 body#page_home{
     background-attachment:fixed;
     background-image: url("fond1.jpg"); 
-    background-size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 /*Sonntag*/
 
@@ -314,4 +286,137 @@ body#page_home{
     top:0;
     left:0;
     z-index: auto;
+    top:-1%;
+    left:-1%;
+}
+
+/*Crédits*/
+
+.liste_image a{
+    color:white;
+    text-decoration:underline;
+} 
+
+.liste_image li { 
+    display: list-item; 
+    margin-left: 1em;
+}
+
+.liste_image{
+    list-style-type:square;
+    color:white
+}
+
+.liste_image a:hoover{
+    color:red
+}
+
+/*zone cliquable*/
+
+div.cliquable{
+    width:100%;
+    margin-top: 60px;
+    position:relative; /*Absolument essentiel pour décrire la position absolue des zones !*/
+}
+
+.europe-zone{
+    position: absolute;
+    top: 34%;
+    left: 48%;
+    height: 10%;
+    width: 7%;
+    transform:scale(0.9);
+    transition: .5s;
+}
+
+.europe-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+.amerique-zone{
+    position: absolute;
+    top: 37%;
+    left: 28%;
+    height: 10%;
+    width: 7%;
+    transform:scale(0.9);
+    transition: .5s;
+}
+
+.amerique-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+.inde-zone{
+    position: absolute;
+    top: 49%;
+    left: 65.5%;
+    height: 10%;
+    width: 7%;
+    transform:scale(0.9);
+    transition:all .5s;
+}
+
+.inde-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+.amerique-sud-zone{
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    height: 5%;
+    width: 3.5%;
+    transform:scale(0.9);
+    transition:all .5s;
+}
+
+.amerique-sud-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+.philippines-zone{
+    position: absolute;
+    top: 54%;
+    left: 78%;
+    height: 5%;
+    width: 3.5%;
+    transform:scale(0.9);
+    transition:all .5s;
+}
+
+.philippines-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+.senegal-zone{
+    position: absolute;
+    top: 52%;
+    left: 44%;
+    height: 5%;
+    width: 3.5%;
+    transform:scale(0.9);
+    transition:all .5s;
+}
+
+.senegal-zone:hover{
+    transform:scale(1);
+    transition: .5s;
+}
+
+rect.hoverable{
+    fill:rgba(0, 0, 0, 0.6);;
+    stroke-width: 0;
+    cursor: pointer;
+    transition:.5s;
+}
+
+rect.hoverable:hover{
+    fill:rgba(0, 0, 0, 0.8);
+    transition:.5s;
 }

@@ -19,7 +19,7 @@ git push
     </head>
     <body id="page_home">
 
-        <svg width="100%" height="400%" class ="gradient">
+        <svg width="105%" height="105%" class ="gradient">
             <defs>
                 <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%" >
                     <stop offset="10%" style="stop-color:rgb(0, 0, 0);stop-opacity:0" />
@@ -38,6 +38,7 @@ git push
               <li><a href="fr/a_propos.html">À propos</a></li>
               <li><a href="fr/contact.html">Contact</a></li>
               <li><a href="fr/source.html">Sources</a></li>
+              <li><a href="fr/credits.html">Crédits</a></li>
               <li><a>Langue</a>
                 <ul class="depliant_langage">
                     <li><a href="en/home_page.html">English</a></li>
@@ -189,7 +190,7 @@ git push
         </div>
 
         <div class="cadre">
-            <h3  id="introduction"><em>La Guerre de Sept Ans, premier conflit mondial ?</em></h3>
+            <h3  id="introduction">La Guerre de Sept Ans, premier conflit mondial ?</h3>
 
             <div class = "introduction"> 
 
@@ -246,74 +247,59 @@ git push
                 <p>
                     Pour bien commencer la navigation sur ce site, la mappemonde ci-dessous, datée précisément 
                     de 1754 et dressée par Jacques-Nicolas Bellin, donne une idée détaillée de la perception du 
-                    monde par les européens à cette époque. Cliquez sur les zones rouges de la carte indiquant 
+                    monde par les européens à cette époque. Cliquez sur les zones noires de la carte indiquant 
                     les champs de batailles de la Guerre de Sept Ans.
                 </p>
 
-            </div>
 
-            <div class="cliquable">
+                <div class="cliquable">
 
-                <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" id="carte"/>
-        
-                <map name="mappemonde">
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="320,136,384,192" 
-                          href="fr/europe.html"
-                          alt="Europe"/> <!--Europe-->
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="176,160,240,216" 
-                          href="fr/amerique_nord.html"
-                          alt="Amérique du Nord"/> <!--Amérique du Nord-->
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="440,208,504,264"  
-                          href="fr/inde.html"
-                          alt="Inde"/> <!--Inde-->
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="200,244,228,272"       
-                          href="fr/ailleurs.html/#amerique_sud_antilles"
-                          alt="Amérique du Sud et Antilles"/> <!--Amérique du Sud et Antilles-->
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="536,236,564,264"            
-                          href="fr/ailleurs.html/#philippines"
-                          alt="Philippines"/> <!--Philippines-->
-        
-                        <area
-                        class = "zone_grise"
-                          shape="rect"
-                          coords="300,224,328,252"
-                          href="fr/ailleurs.html/#senegal"
-                          alt="Sénégal"/> <!--Sénégal-->
-        
-                </map>
-        
-                <svg width="688" height="440" class="mappemonde">
-                    <!--<image href="image/mappemonde.png" width="1718" height="1106"/>-->
-        
-                    <rect class="hoverable" x="320" y="136" width="64" height="56" />
-                    <rect class="hoverable" x="176" y="160" width="64" height="56"/>
-                    <rect class="hoverable" x="440" y="208" width="64" height="56"/>
-                    <rect class="hoverable" x="200" y="244" width="28" height="28"/>
-                    <rect class="hoverable" x="536" y="236" width="28" height="28"/>
-                    <rect class="hoverable" x="300" y="224" width="28" height="28"/>
-                </svg>
-        
-            </map>
+                    <img src="image/mappemonde.png" alt="" usemap="#mappemonde" class="mappemonde" id="carte" width="100%"/>
+            
+                    <div class="europe-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/europe.html">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="amerique-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/amerique_nord.html">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="inde-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/inde.html">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="amerique-sud-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/ailleurs.html/#amerique_sud_antilles">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="philippines-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/ailleurs.html/#philippines">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+                    <div class="senegal-zone">
+                        <svg width="100%" height="100%" class="carre">
+                            <a href="fr/ailleurs.html/#senegal">
+                              <rect class="hoverable" x="0" y="0" width="100%" height="100%" />
+                            </a>
+                        </svg>
+                    </div>
+
+                </div>
         
             </div>
 
