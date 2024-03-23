@@ -83,6 +83,7 @@
 }
 
 .menu_deroulant_lateral{
+    list-style-type:none;
     justify-content:left;
     background: #000000;
     background:rgba(0, 0, 0, 0.8);
@@ -91,6 +92,10 @@
     transform: scale(0);
     transform-origin: top left;
     transition: all 300ms ease-in-out;
+}
+
+nav li{
+    list-style-type:none;
 }
 
 .flanc_droit {
@@ -240,6 +245,42 @@ body#page_home{
 }
 /*Sonntag*/
 
+body#page_europe{
+    background-attachment:fixed;
+    background-image: url("fondEurope.jpg"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*Boucher*/
+
+body#page_inde{
+    background-attachment:fixed;
+    background-image: url("fondInde.jpg"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*Daniell*/
+
+body#page_amerique{
+    background-attachment:fixed;
+    background-image: url("fondAmerique.jpeg"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*Cole*/
+
+body#page_ailleurs{
+    background-attachment:fixed;
+    background-image: url("fondAmeriqueSud.jpg"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*Church*/
+
 .gradient{
     position:absolute;
     top:0;
@@ -300,7 +341,6 @@ div.cliquable{
     height: 10%;
     width: 7%;
     transform:scale(0.9);
-    transform:rotate(-45deg);
     transition: .5s;
 }
 
