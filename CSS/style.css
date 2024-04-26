@@ -1,6 +1,22 @@
 
 /*Il faudra faire un peu de media queries...*/
 
+/* Généralités */
+
+@font-face{
+    font-family: "bricktown";
+    src: url("../bricktown/Bricktown.ttf")
+}
+
+@font-face{
+    font-family: "louis_george_cafe";
+    src:url('../louis_george_cafe/Louis\ George\ Cafe.ttf');
+} 
+
+@keyframes color_change {
+	50% { background-color: rgb(255, 255, 255); }
+}
+
 /* Menu du haut*/
 .menu {
     display:flex;
@@ -12,7 +28,7 @@
     margin-left: -10px;
     margin-right: -10px;
     position: fixed;
-    width: 1500px;
+    width: 100%;
     z-index: 2;
 }
 
@@ -20,7 +36,7 @@
 {
     padding:0;
     transition: .5s;
-    font-family: sans-serif;
+    font-family: "louis_george_cafe";
     justify-content: center;
     list-style-type: none;
 }
@@ -63,7 +79,7 @@
 .menu li ul.depliant_langage { 
     transform-origin: top center;
     transition: all 300ms ease-in-out;
-    background-color: #c8c6c6bd
+    background-color: #c8c6c6bd;
 }
 
 .menu li:hover ul.depliant_langage {
@@ -131,7 +147,7 @@ nav li{
 }
 
 .flanc_droit .menu_deroulant_lateral a{
-    font-family: sans-serif;
+    font-family: "louis_george_cafe";
     list-style-type: none;
     text-decoration: none;
     color:rgb(168, 168, 168);
@@ -171,32 +187,79 @@ span.fleche{
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 10%;
-    font-family: sans-serif;
+    font-family: "louis_george_cafe";
     padding-top: 5%;
     position:relative;
     z-index: 1;
+    color:#ffffff
 }
 
-.cadre h3, .cadre p
+.panel{
+    background-color: #000000;
+    background:rgba(0, 0, 0, 0.7);
+    display:block;
+    min-height: 100vh;
+    justify-content: space-around;
+    margin-top: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 600px;
+    text-align: justify;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    position:relative;
+    font-family: "louis_george_cafe";
+    z-index: 1;
+    color:#ffffff
+
+}
+
+body > .panel{
+    min-height: 0vh;
+    margin-top: 20%;
+    padding-bottom: 100px;
+
+}
+
+
+.cadre h3, .cadre p, .panel h3, .panel p
 {
     color:#ffffff;
 }
 
-.cadre h3
-{
+.cadre h3, .cadre h4, .panel h3, .panel h4{
     text-align: center;
 }
 
-.cadre p
+@media (min-width: 1100px) {
+    .cadre p, .panel p{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.cadre h4, .panel h4{
+    margin-top: 40px
+}
+
+.cadre h3, .panel h3
+{
+    text-align: center;
+    font-family: "Bricktown";
+}
+
+.cadre p, .panel p
 {
     margin-top: 40px;
 }
 
-.cadre p:last-child{
+.cadre .introduction > p:last-child, .panel p:last-child{
     margin-bottom: 60px;
 }
 
-.cadre p:first-child{
+.cadre .introduction > p:last-child, .panel p:first-child{
     margin-bottom: 40px;
 }
 
@@ -222,14 +285,14 @@ p a:hover{
 }
 
 .cadre_titre h1{
-    font-family:sans-serif;
+    font-family:"bricktown";
     font-weight: bold;
-    font-size: 300%;
+    font-size: 250%;
     color:white;
 }
 
 .cadre_titre h2{
-    font-family:sans-serif;
+    font-family:"bricktown";
     font-weight: bold;
     color:white;
 }
@@ -280,6 +343,14 @@ body#page_ailleurs{
     position: relative;
 }
 /*Church*/
+
+body#page_puissance{
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-image 1s;
+}
 
 .gradient{
     position:absolute;
@@ -425,6 +496,12 @@ rect.hoverable:hover{
 
 img.carte_europe{
     background:rgba(0, 0, 0, 1);
+}
+
+/*Specifique Amerique*/
+
+img.carte_amerique{
+    margin-top: 50px;
 }
 
 /*zone cliquable Europe*/
@@ -665,3 +742,98 @@ circle.hoverable-almeida:hover{
     transition:.5s
 }
 
+/* Paintings */
+
+.painting-main{
+    background-image: url("fondEurope.jpg");
+}
+
+.painting-espagne{
+    background-image: url("fond_espagne.jpg");
+}
+
+.painting-grande-bretagne{
+    background-image: url("fond_angleterre.jpg");
+}
+
+.painting-russie{
+    background-image: url("fond_russie.jpg");
+}
+
+.painting-suede{
+    background-image: url("fond_suede.png");
+}
+
+.painting-habsbourg{
+    background-image: url("fond_autriche.jpg");
+}
+
+.painting-pologne{
+    background-image: url("fond_pologne.jpg");
+}
+
+.painting-prusse{
+    background-image: url("fond_allemagne.jpg");
+}
+
+.painting-france{
+    background-image: url("fond_france.jpg");
+}
+
+.painting-portugal{
+    background-image: url("fond_portugal.png");
+}
+
+.painting-saint-empire{
+    background-image: url("fond_saint-empire.jpg");
+}
+
+/* Pour les blogs */
+
+.blog{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background:rgba(0, 0, 0, 0.7);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position:relative;
+}
+
+.blog div, .blog a{
+    display: inline-block;
+}
+
+.blog_texte{
+    position:absolute;
+    left: 30%;
+    top: 20px;
+    width: 65%;
+}
+
+.blog h5{
+    margin-top: 0px;
+}
+
+.blog > div:first-child{
+    width:25%
+}
+
+.blog_texte p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-indent: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Style citations */
+
+.citation{
+    text-indent: unset;
+    font-style: italic;
+    margin-left: 50px;
+}

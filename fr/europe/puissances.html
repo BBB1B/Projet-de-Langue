@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device_width, initial-scale = 1, viewport-fit = cover"> <!--Pour les mobiles exclusivement-->
+        <meta name = "title" content="La Guerre de Sept Ans - Europe">
+        <title>La Guerre de Sept Ans</title> <!-- titre apparaisant sur l'onglet-->
+        <link rel = "stylesheet" href = "../../CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
+        <link rel="icon" type="../../image/png" sizes="32x32" href="../../image/sablier.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
+        <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
+        <script src="../../JS/jquery-3.7.1.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="../../JS/script.js"></script>
+    </head>
+    <body class="painting-main" id="page_puissance" >
+
+        <!--Menu en tête de site-->
+
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
+              <li><a href="../../accueil_projet_de_langue.html">Accueil</a></li>
+              <li><a href="../a_propos.html">À propos</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../source.html">Sources</a></li>
+              <li><a href="../credits.html">Crédits</a></li>
+              <li><a>Langue</a>
+                <ul class="depliant_langage">
+                    <li><a href="../../en/europe/powers.html">English</a></li>
+                    <!--<li><a href="../../de/">Deustche</a></li>-->
+                    <li><a href="../../es/europa/potencias.html">Español</a></li>
+                </ul> 
+              </li>
+            </ul>
+        </nav>
+
+        <!--menu latéral -->
+
+        <div class="flanc_droit">
+        
+            <img src="../../image/menu.png"  class="image_menu"/> 
+
+            <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+                <li class="presentation"><span  class="fleche"><img src = "../../image/arrow.png"/></span><a href="../../accueil_projet_de_langue.html">   Présentation</a>
+                    <ul class="niveau1">
+                        <li><a href="../../accueil_projet_de_langue.html/#introduction">Introduction</a></li>
+                        <li><a href="../../accueil_projet_de_langue.html/#carte">Mappemonde</a></li>
+                    </ul>
+                </li>
+                <li  class="europe">  <span  class="fleche"><img src = "../../image/arrow.png"/></span><a href="../europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+                    <ul class="niveau1">
+                        <li><a href="puissances.html">   Puissances européennes en 1750</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
+                                <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
+                                <li><a href="fr/europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
+                                <li><a href="fr/europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
+                                <li><a href="fr/europe/puissances.html/#russie">Empire de Russie</a></li>
+                                <li><a href="fr/europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#portugal">Royaume du Portugal</a></li>
+                                <li><a href="fr/europe/puissances.html/#suede">Royaume de Suède</a></li>
+                                <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
+                                <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
+                                <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="diplomatie"><a href = "diplomatie.html">   Relations diplomatiques</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="episodes"><a href = "episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                            <!--<ul class="niveau2" >
+                                <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
+                                    </ul>
+                                </li>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                    </ul>
+                </li>
+                <li  class="amerique"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href="../amerique_nord.html">   En Amérique du Nord</a>
+                    <ul class="niveau1">
+                        <li><a href="../amerique/contexte_amerique.html">Contexte</a></li>
+                        <li><a href="../amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
+                        <li><a href="../amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
+                    </ul>
+                </li>
+                <li class="inde"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href="../inde.html">   En Inde</a>
+                    <ul class="niveau1">
+                        <li><a href="../inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
+                        <li><a href="../inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
+                    </ul>
+                </li>
+                <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span>><a href="../ailleurs.html">  Le conflit ailleurs dans le monde</a>
+                    <ul class="niveau1">
+                        <li><a href="../ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                            <!--<ul class = "niveau2">
+                                <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
+                                <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
+                            </ul>-->
+                        <li><a href="../ailleurs.html/#senegal">au Sénégal</a></li>
+                    </ul>
+                </li>
+                <li  class="issue"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href = "../issue.html">   Issue</a>   
+                    <ul class="niveau1">
+                        <li><a href = "../issue.html/#paris">Traité de Paris</a></li>
+                        <li><a href = "../issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
+                        <li><a href = "../issue.html/#hambourg">Traité de Hambourg</a></li>
+                    </ul>
+                </li> 
+                <li class="impacts"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href ="../impacts.html">   Impacts de la Guerre de Sept Ans</a>
+                    <ul class="niveau1">
+                        <li><a href="../impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
+                        <li><a href="../impacts/culture.html">Dans la culture</li></li>
+                    </ul>            
+                </li>
+                <li><a href = "../contemporains.html">Evènements contemporains au conflit</a></li>
+            </nav>
+        </div>
+
+            <div class="cadre_titre"> 
+
+                <h1>puissances européennes</h1>
+
+            </div>
+
+            <div class="cadre panel" data-painting="main">
+
+                <h3 id="introduction">Le concert des États</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Cette page décrit dans des petites fiches explicatives les historiques des principaux Etats protagonistes 
+                        de la guerre de Sept Ans. Ces notes développent le contexte historique, politique et militaire de ces 
+                        puissances militaires avant le conflit.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="espagne" id="espagne">
+
+                <h3>Royaume d'Espagne</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        A partir du règne de Charles Quint au début du XVI° siècle, l’Espagne constitue un des premiers empires coloniaux, 
+                        avec la conquête d’une grande partie de l’Amérique du Sud en respectant le principe du traité de Tordesillas, 
+                        qui partage le monde en deux hémisphères d’influence espagnole et portugaise. Les richesses naturelles du 
+                        Mexique et de la Colombie massivement importées dans la péninsule ibérique donnent au pays un poids considérable 
+                        sur la scène européenne. Sa flotte militaire, l’<em>Armada</em>, reste pendant deux siècles celle comptant le plus de 
+                        navires militaires.
+                    </p>
+
+                    <p>
+                        Cependant le royaume montre des premiers signes du déclin de son influence avec les guerres et les révoltes 
+                        successives dès le début du XVII° siècle, notamment la guerre de Quatre-Vingts Ans qui aboutira à l’indépendance 
+                        des Pays-Bas espagnols et à la création des Provinces-Unies. La guerre de Succession d’Espagne de 1701 à 1714 
+                        finit d’enterrer l’armée et les finances du royaume. Enfin, le tremblement de terre de 1755 toucha très 
+                        durement l’Espagne. Les ports de Cadix et de Séville sont détruits par les multiples secousses et le tsunami 
+                        qui s’ensuivit. Le pays perd ainsi ses principales voies de communication commerciales et militaires avec le 
+                        Nouveau Monde. 
+                    </p>
+
+                    <p>
+                        Par conséquent, le pays rentre tardivement dans la guerre de Sept Ans avec une certaine fébrilité. Par ailleurs, 
+                        Alliée de la France depuis que Louis XIV a pu placer au trône son petit-fils Philippe V en 1700, l’Espagne est 
+                        aidée financièrement pour reconstruire sa flotte navale tout du long du XVIII° siècle. Mais certains membres 
+                        influents de la cour de Madrid poussent en coulisse pour des relations plus étroites avec l’Angleterre. C’est 
+                        le cas notamment de Ricardo Wall. Ce secrétaire d’Etat issu d’une famille irlandaise catholique ayant fui la 
+                        Glorieuse Révolution est paradoxalement le plus grand représentant des intérêts anglais à Madrid. Néanmoins 
+                        les préoccupations de roi se portent sur le Portugal, les captures illégales de navires espagnols par la 
+                        Royal Navy et le pillage du bois du Honduras par ces mêmes Anglais.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="grande-bretagne" id="angleterre">
+
+                <h3>Grande-Bretagne</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        La Glorieuse Révolution de 1688 constitue sans doute l’acte fondateur de la monarchie parlementaire britannique. 
+                        La déclaration des droits de 1689, le <em>Bill of Rights</em>, développe en détail le fonctionnement des institutions 
+                        anglaises et renforce les pouvoirs du Parlement au détriment de la monarchie. Il est important de noter que ces 
+                        évènements sont le fruit d’une ingérence des néerlandais, et notamment de Guillaume III d’Orange, qui envahit 
+                        le sud-ouest de l’Angleterre avec près de 10 000 soldats d’élite, poussant la plupart des nobles et évêques à 
+                        stopper leur soutien à Jacques II. 
+                    </p>
+
+                    <p>
+                        La présence néerlandaise perdure dans les milieux d’affaires de Londres. Ce sont eux, avec les huguenots ayant 
+                        fui les persécutions contre les protestants en France, qui créent la Banque d’Angleterre en 1694 et développent 
+                        un milieu financier prospère, rivalisant avec les autres places financières que sont Anvers et Amsterdam. 
+                        L’efficacité des outils financiers mis en place par le Parlement et la Banque d’Angleterre constitue un 
+                        avantage indéniable pour le pays au XVIII° siècle. Pour une population trois fois moindre que la France, 
+                        le pays a pu s’endetter au même niveau que Versailles, avec des taux d’intérêts deux fois moindre en moyenne 
+                        en 1750. Ces dettes servent à financer la construction des vaisseaux de la Royal Navy, devenue l’armée maritime 
+                        la plus puissante du continent.
+                    </p>
+
+                    <p>
+                        Mais comme dit précédemment, la Grande-Bretagne reste dans une période troublée en ce début du XVIII° siècle. 
+                        Les catholiques écossais et irlandais continuent de soutenir les Stuart, catholiques, pour la couronne 
+                        d’Angleterre. Les soulèvements successifs, soutenus par le royaume de France, prennent le nom de rébellions 
+                        jacobites. 
+                    </p>
+
+                    <p>
+                        Les jacobites considèrent les rois membres de la dynastie de Hanovre, au pouvoir durant tout le XVIII° siècle, 
+                        comme des usurpateurs. Pour les soutenir, la France a notamment préparé un débarquement en 1708, envoyé des 
+                        troupes en 1715 en Ecosse avec l’Espagne, et ont projeté d’envahir le pays en 1744. Toutes ces tentatives 
+                        sont restées vaines et la dynastie de Hanovre est restée en place. A l’aube de la guerre de Sept Ans, ces 
+                        plans d’invasions sont toujours d’actualité et électrisent l’opinion publique anglaise. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="russie" id="russie">
+
+                <h3>Empire russe</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Situé aux confins de l’Europe de l’Est, l’empire russe créé en 1721 reprend l’héritage et l’appareil d’Etat du 
+                        tsarat de Russie, dont le siège était à Moscou. En 1703, à l’initiative de Pierre le Grand, le début du 
+                        transfert des administrations et du palais royal à Saint-Pétersbourg. L’emplacement de la nouvelle capitale 
+                        impériale est fortement symbolique puisqu’elle marque un rapprochement vers l’Europe mais aussi et surtout 
+                        une volonté pour l’empire russe de légitimer sa présence sur rives de la mer Baltique, sur des terres longtemps 
+                        revendiquées et contrôlées par la Suède.
+                    </p>
+
+                    <p>
+                        Au début du XVIII° siècle, la Russie a pris le contrôle de quasiment toute la Sibérie, n’affrontant que peu 
+                        de résistance. En 1690, elle signe avec la Chine de la dynastie Qing un traité de paix, sécurisant la 
+                        possession de ces immenses territoires. Les résistances les plus fortes auxquelles font face la Russie du 
+                        XVI° siècle au XVIII° viennent principalement du Caucase et des steppes pontiques. Notamment, l’hetmanat 
+                        cosaque, dans les territoires s’étendent dans l’actuelle Ukraine centrale, cherche à maintenir un degré 
+                        d’autonomie vis-à-vis de la Pologne, des Ottomans et de la Russie. 
+                    </p>
+
+                    <p>
+                        A rebours de la plupart des pays européens, la Russie maintient et renforce le système de servage des paysans 
+                        vis-à-vis des propriétaires terriens. Les révoltes cosaques contre ce système similaire à l’esclavage pratiqué 
+                        par les autres puissances européennes au XVI° et XVII° siècle – menées entre autres par Ivan Bolotnikov, 
+                        Stenka Razin et Kondrati Boulavine – sont réprimés dans le sang et la terreur.
+                    </p>
+
+                    <p>
+                        En dehors de ces rébellions, l’empire n’a que peu été concerné par les conflits qui déchirent l’Europe Centrale 
+                        et les guerres de religions.
+                    </p>
+
+                    <p>
+                        A la veille de la guerre de Sept Ans, le parti francophile gagne en influence et en importance au sein de la 
+                        cour de Saint-Pétersbourg pour toutes sortes de raisons politiques et militaires mais aussi par l’attirance 
+                        de l’impératrice-tsar Elisabeth pour la France. Le chef de ce parti, Bestoujev, propose l’envoi de 30 000 hommes 
+                        en Saxe afin d’attiser l’attitude belliqueuse de Frédéric II. Pendant la guerre de Sept Ans Russes s’appuieront 
+                        sur des unités cosaques contre les prussiens.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="suede" id="suede">
+
+                <h3>Royaume de Suède</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        La Suède est un allié de longue date de la Russie et de la France en Europe du Nord, même si le mariage du roi 
+                        de Suède avec la sœur de Frédéric II confirme l’alliance prussienne. Il faut donc regarder la politique intérieure 
+                        du royaume suédois pour comprendre son engagement dans la guerre de Sept Ans
+                    </p>
+
+                    <p>
+                        En effet, la Suède n’a pas fait le choix de rester neutre comme son voisin danois. Depuis la fin de la Guerre du 
+                        Nord, le pays vit dans une période constitutionnaliste, où le Riksdag – le parlement suédois – exerce l’essentiel 
+                        des pouvoirs politiques. S’y affronte le parti des Chapeaux, défenseurs de la Constitution et d’une alliance avec 
+                        la France, avec le parti des Bonnets, défenseurs d’un renforcement des prérogatives royales et d’une alliance avec 
+                        l’Angleterre. 
+                    </p>
+
+                    <p>
+                        La situation bascule en 1756 en faveur des Chapeaux, à la suite de l’échec d’un coup d’Etat orchestré par roi de 
+                        Suède avec le concours des Bonnets, de l’Angleterre et de la Prusse. Le complot est déjoué par les Chapeaux, 
+                        jetant le discrédit sur ces deux royaumes et renforçant les intérêts français. En septembre 1757, le ministre des 
+                        Affaires Etrangères Anders Johan von Höpken signe une convention défensive avec la France et l’Autriche, et décide 
+                        d’envoyer 20000 hommes en Poméranie au frais de ces deux pays, tels des mercenaires. Höpken voit dans cette guerre 
+                        l’espoir d’étendre l’influence suédoise sur ces terres et ces ports prospères d’Allemagne du nord.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="habsbourg" id="habsbourg">
+
+                <h3>Monarchie de Habsbourg</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Bien qu’ayant perdu des territoires depuis le XVI° siècle, l’empire des Habsbourg contrôle toujours en 
+                        grand pan de l’Europe Centrale comprenant l’Autriche, la Hongrie, la Bohême et Moravie (actuelle Tchéquie), 
+                        la Slovaquie, es Pays-Bas autrichiens (actuelle Belgique), la Dalmatie (actuelle Croatie), le duché de Milan 
+                        ainsi que quelques Etats princiers dans le sud du Saint-Empire. La monarchie de Habsbourg reste donc tentaculaire 
+                        en ce début du XVIII° siècle et rivalise en population avec le royaume de France, avec près de 20 millions 
+                        d’habitants. De plus, l’empereur du Saint-Empire – lorsqu’il n’est pas issu de la maison de Habsbourg – est 
+                        maintenu sous une très forte emprise autrichienne car la maison impériale peut faire pression auprès des 
+                        princes électeurs allemands pour leurs votes à la Diète de Ratisbonne.
+                    </p>
+
+                    <p>
+                        Cependant, les ennemis extérieurs des Habsbourg auraient pu avoir raison de l’empire. Pendant près de deux siècles, 
+                        Vienne, alliée avec la Varsovie, sont en posture défensive face à l’empire ottoman qui – à deux reprises – établit 
+                        le siège de la capitale impériale, en 1529 et en 1683, sans succès. Ce dernier siège marque en fait un point de 
+                        rupture dans les guerres austro-turques, puisqu’après cette victoire, les forces autrichiennes et impériales 
+                        envahissent la Hongrie et reprennent le dessus sur l’empire turc, jusqu’en 1714.
+                    </p>
+
+                    <p>
+                        L’autre rivalité des Habsbourg est bien celle avec la France. Le conflit franco-autrichien n’est pas qu’une 
+                        simple querelle de voisinage en Belgique, il s’agit avant tout d’une lutte d’influence sur toute l’Europe continentale, 
+                        dans les cours royales et princières avec pour horizon politique le contrôle de toute la région. La devise de la maison 
+                        des Habsbourg est plus qu’explicite : Alles Erdreich ist Oesterreich untertan ou en latin : Austriae est imperare 
+                        orbi universo ce qui peut être traduit par : La destinée de l’Autriche est de diriger le monde entier. 
+                    </p>
+
+                    <p>
+                        L’actuelle impératrice, Marie-Thérèse d’Autriche, monte par ailleurs sur le trône autrichien en 1740 ce qui 
+                        déclenche la guerre de Succession d’Autriche. Le traité d’Aix-la-Chapelle signé à l’issue du conflit en 1748 
+                        confirme sa légitimité auprès des autres puissances européennes. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="pologne" id="deux-nations">
+
+                <h3>République des Deux-Nations</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Bien plus grande géographiquement que l’actuelle république polonaise, la République des Deux Nations est la 
+                        puissance majeure de l’Europe centrale pendant près de deux siècles. Ses territoires couvrent – outre une 
+                        bonne part de la Pologne actuelle – les territoires baltes, la Russie Blanche (actuelle Biélorussie) jusqu’au 
+                        territoire Cosaques, dans l’est de l’Ukraine. Les Deux Nations font référence à l’alliance personnelle entre 
+                        deux entités politiques, le royaume de Pologne et le grand-duché de Lituanie scellé par l’accord de Lublin en 
+                        1569. Du fait de sa position centrale et de ces terres fertiles, La République tire profit de ces produits 
+                        agricoles ainsi que des commerces de fourrures en provenance du nord et de produits manufacturés en provenance 
+                        de l’ouest.
+                    </p>
+
+                    <p>
+                        Une des richesses de la République des Deux Nations est sa diversité culturelle. Depuis la signature de la 
+                        Confédération de Varsovie en 1573, le pays est l’un des rares en Europe à garantir les libertés religieuses. 
+                        Ainsi, de nombreuses communautés persécutées ailleurs en Europe viennent trouver refuge sur cet immense 
+                        territoire : des juifs, des orthodoxes, des protestants ainsi que des musulmans s’y installent durablement 
+                        et forment des minorités reconnues par le pouvoir central. De même, la plupart des documents administratifs 
+                        sont traduits en plusieurs langues parmi lesquels le latin, le français, l’hébreu et l’allemand. Enfin, 
+                        certaines villes comme Cracovie ont été et restent des pôles majeurs de la Renaissance en Europe
+                    </p>
+
+                    <p>
+                        La République, qui est en fait une monarchie élective, entame néanmoins sa période de déclin au début du 
+                        XVIII° siècle, du fait de plusieurs épisodes de pestes bubonique. Bien qu’étant restée neutre pendant la 
+                        guerre de Trente Ans, les pillages suédois n’épargnent pas non plus les principales cités du pays. 
+                    </p>
+
+                    <p>
+                        La Pologne-Lituanie restera aussi neutre pendant la guerre de Sept Ans. Lorsque les troupes russes ont été 
+                        mobilisées pour épauler l’Autriche, d’intenses tractations diplomatiques ont eu lieu pour que celles-ci 
+                        puissent traverser la Pologne. Paradoxalement, l’alliance franco-polonaise jusqu’alors en place servait 
+                        pour la France à contrecarrer les ambitions expansionnistes des Habsbourg en Europe Centrale, et pour la 
+                        république nobiliaire de se défendre contre l’empiètement des empires russe et autrichien.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="prusse" id="prusse">
+
+                <h3>Royaume de Prusse</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        La Prusse est un Etat relativement récent, né de la fusion du duché de Prusse et de l’Electorat de Brandebourg 
+                        – la région berlinoise – en 1701, jusqu’alors en union personnelle. Au début du XVIII° siècle, le royaume 
+                        reste de taille relativement modeste, et la partie du territoire au sein du Saint-Empire fait pâle mesure 
+                        face à l’Autriche. Frédéric-Guillaume entreprend de construire une véritable Etat militaire durant ses années 
+                        de règne. C’est son fils Frédéric II qui montera sur le trône en 1740, à la veille de la guerre de Succession 
+                        d’Autriche. L’armée prussienne réussit à conquérir la Silésie dès le début de la guerre. L’Autriche cherchera 
+                        tout du long de la guerre de Sept Ans à reprendre ces terres très peuplées et fertiles
+                    </p>
+
+                    <p>
+                        Pour Mirabeau, l’Etat prussien est une véritable machine de guerre : « La Prusse n’est pas Etat qui possède 
+                        une armée, mais une armée qui occupe un Etat ». En effet, près de 4% de la population du pays est enrôlée 
+                        dans l’armée, et même jusqu'à 7,5 en 1760, quand ce rapport dépasse péniblement 1% dans les autres pays d’Europe. L’ensemble de l’appareil 
+                        d’Etat est bien au service de l’armée prussienne, les revenus collectés par les taxes et impôts sur les 
+                        territoires occupés servent à répondre aux immenses besoins de cette armée.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="france" id="france">
+
+                <h3>Royaume de France</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Durant la première moitié du XVIII° siècle, le royaume de France est au sommet de sa puissance, son 
+                        influence sur le continent européen ainsi qu’ailleurs dans le monde n’a jamais été aussi forte. Comme 
+                        symptôme de cette influence, l’ensemble des cours européennes, y compris rivales, adoptent le français 
+                        comme langue véhiculaire à cette époque. 
+                    </p>
+
+                    <p>
+                        [En Amérique du Nord, au Sénégal et en Inde]
+                    </p>
+
+                    <p>
+                        [Colbertisme]
+                    </p>
+
+                    <p>
+                        [Persécutions des protestants]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="portugal" id="portugal">
+
+                <h3>Royaume du Portugal</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        [Présence en Afrique, au Brésil et en Inde]
+                    </p>
+
+                    <p>
+                        [Alliance avec les Anglais]
+                    </p>
+
+                    <p>
+                        [Tremblement de Terre de 1755]
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="saint-empire" id="saint-empire">
+
+                <h3>Saint-Empire romain germanique</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        [Multitude d’Etats]
+                    </p>
+
+                    <p>
+                        [Electorats : droit de vote]
+                    </p>
+
+                    <p>
+                        [Conflits protestants/catholiques]
+                    </p>
+
+                    <p>
+                        [Institutions complexes dominées par l’Autriche]
+                    </p>
+
+                </div>
+
+            </div>
+        
+
+    </body>
+</html>
