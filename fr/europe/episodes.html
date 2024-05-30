@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device_width, initial-scale = 1, viewport-fit = cover"> <!--Pour les mobiles exclusivement-->
+        <meta name = "title" content="La Guerre de Sept Ans - Europe">
+        <title>La Guerre de Sept Ans</title> <!-- titre apparaisant sur l'onglet-->
+        <link rel = "stylesheet" href = "../../CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
+        <link rel="icon" type="../../image/png" sizes="32x32" href="../../image/sablier.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
+        <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
+        <script src="../../JS/jquery-3.7.1.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="../../JS/script.js"></script>
+    </head>
+    <body class="painting-main" id="page_puissance" >
+
+        <!--Menu en tête de site-->
+
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
+              <li><a href="../../accueil_projet_de_langue.html">Accueil</a></li>
+              <li><a href="../a_propos.html">À propos</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../source.html">Sources</a></li>
+              <li><a href="../credits.html">Crédits</a></li>
+              <li><a>Langue</a>
+                <ul class="depliant_langage">
+                    <li><a href="../../en/europe/powers.html">English</a></li>
+                    <!--<li><a href="../../de/">Deustche</a></li>-->
+                    <li><a href="../../es/europa/potencias.html">Español</a></li>
+                </ul> 
+              </li>
+            </ul>
+        </nav>
+
+        <!--menu latéral -->
+
+        <div class="flanc_droit">
+        
+            <img src="../../image/menu.png"  class="image_menu"/> 
+
+            <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+                <li class="presentation"><span  class="fleche"><img src = "../../image/arrow.png"/></span><a href="../../accueil_projet_de_langue.html">   Présentation</a>
+                    <ul class="niveau1">
+                        <li><a href="../../accueil_projet_de_langue.html/#introduction">Introduction</a></li>
+                        <li><a href="../../accueil_projet_de_langue.html/#carte">Mappemonde</a></li>
+                    </ul>
+                </li>
+                <li  class="europe">  <span  class="fleche"><img src = "../../image/arrow.png"/></span><a href="../europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+                    <ul class="niveau1">
+                        <li><a href="puissances.html">   Puissances européennes en 1750</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
+                                <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
+                                <li><a href="fr/europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
+                                <li><a href="fr/europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
+                                <li><a href="fr/europe/puissances.html/#russie">Empire de Russie</a></li>
+                                <li><a href="fr/europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#portugal">Royaume du Portugal</a></li>
+                                <li><a href="fr/europe/puissances.html/#suede">Royaume de Suède</a></li>
+                                <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
+                                <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
+                                <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="diplomatie"><a href = "diplomatie.html">   Relations diplomatiques</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="episodes"><a href = "episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                            <!--<ul class="niveau2" >
+                                <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
+                                    </ul>
+                                </li>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                    </ul>
+                </li>
+                <li  class="amerique"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href="../amerique_nord.html">   En Amérique du Nord</a>
+                    <ul class="niveau1">
+                        <li><a href="../amerique/contexte_amerique.html">Contexte</a></li>
+                        <li><a href="../amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
+                        <li><a href="../amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
+                    </ul>
+                </li>
+                <li class="inde"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href="../inde.html">   En Inde</a>
+                    <ul class="niveau1">
+                        <li><a href="../inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
+                        <li><a href="../inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
+                    </ul>
+                </li>
+                <li  class="ailleurs"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span>><a href="../ailleurs.html">  Le conflit ailleurs dans le monde</a>
+                    <ul class="niveau1">
+                        <li><a href="../ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                            <!--<ul class = "niveau2">
+                                <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
+                                <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
+                            </ul>-->
+                        <li><a href="../ailleurs.html/#senegal">au Sénégal</a></li>
+                    </ul>
+                </li>
+                <li  class="issue"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href = "../issue.html">   Issue</a>   
+                    <ul class="niveau1">
+                        <li><a href = "../issue.html/#paris">Traité de Paris</a></li>
+                        <li><a href = "../issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
+                        <li><a href = "../issue.html/#hambourg">Traité de Hambourg</a></li>
+                    </ul>
+                </li> 
+                <li class="impacts"><span  class="fleche" onclick="Affichern1()"><img src = "../../image/arrow.png"/></span><a href ="../impacts.html">   Impacts de la Guerre de Sept Ans</a>
+                    <ul class="niveau1">
+                        <li><a href="../impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
+                        <li><a href="../impacts/culture.html">Dans la culture</li></li>
+                    </ul>            
+                </li>
+                <li><a href = "../contemporains.html">Evènements contemporains au conflit</a></li>
+            </nav>
+        </div>
+
+            <div class="cadre_titre"> 
+
+                <h1>Campagnes Européennes</h1>
+
+            </div>
+
+            <div class="cadre panel" data-painting="main-episode-europe">
+
+                <h3 id="introduction">Une guerre continentale</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Cette page décrit dans des petites fiches explicatives les historiques des principaux Etats protagonistes 
+                        de la guerre de Sept Ans. Ces notes développent le contexte historique, politique et militaire de ces 
+                        puissances militaires avant le conflit.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1756" id="europe-1756">
+
+                <h3>1756 : Déclarations et Invasion</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Au début du mois d’avril 1756, la royaume de France prépare à Toulon son offensive pour l’île de Minorque, situé dans 
+                        l’archipel des Baléares. Louis XV et ses ministres cherche à répondre aux différentes interceptions de navires français 
+                        partant vers le Canada à l’automne 1755 par la Navy, vues comme des provocations. Cette île est sous contrôle anglais 
+                        depuis 1712 et la fin de la guerre de Succession d’Espagne. Il s’agit d’un avant-poste stratégique pour les Anglais, 
+                        puisqu’il est situé aux larges des ports de Marseille et Toulon. Par ailleurs, les chroniqueurs proches de Versailles 
+                        comparent la France à une sorte de nouvelle Rome, se devant de punir l’Angleterre, la nouvelle Carthage. Puisqu’aucune 
+                        déclaration de guerre n’a encore été émise, les évènements de Minorque et ces provocations seront tout d’abord vus dans 
+                        la continuité de la guerre de Succession d’Autriche. 
+                    </p>
+
+                    <p>
+                        Mais le contexte est tout autre.
+                    </p>
+
+                    <p>
+                        Tout d’abord, la flotte française apparaît en bien piteux état face aux navires britanniques. Versailles est capable 
+                        d’aligner à peine une trentaine de vaisseaux contre près de quatre-vingt pour l’Angleterre. Pour lancer l’attaque sur 
+                        Minorque, la France mène donc en parallèle une campagne de désinformation avec pour optique de garder stationnée dans 
+                        la Manche la flotte britannique. Pour cela, les ministres et diplomates français propagent la rumeur d’une invasion 
+                        imminente en Angleterre pour rétablir les Stuart sur le trône. Le maréchal Belle-Isle n’hésite pas à « informer » avec 
+                        malice les espions anglais, qui à leur tour envoient des lettres au duc de Newcastle, alors premier ministre. 
+                    </p>
+
+                    <p>
+                        Le débarquement français à l’Ouest de Minorque se fait sans encombre le 10 mai, près du siège du fort Saint-Philippe, 
+                        sur les hauteurs de Port-Mahon. Les renforts britanniques de John Byng composés de dix escadres mettent près de deux 
+                        mois à atteindre l’île en raison des conditions météorologiques désastreuses. Le commandant et ses troupes découvrent 
+                        à leur arrivée que le port est d’ores et déjà contrôlé par les français. Les navires anglais finissent très endommagés 
+                        et sont envoyés à Gibraltar pour réparations. 
+                    </p>
+
+                    <p>
+                        Le siège est plus compliqué que prévu puisqu’il dure près de deux mois. La résistance des soldats anglais et du général 
+                        Blackenay, du haut de ses 84 ans, est acharnée. Mais la forteresse est prise d’assaut le 27 juin à dix heures du soir. 
+                        L’assaut est particulièrement difficile et meurtrier pour les français, qui comptent deux cents morts et cinq cents 
+                        blessés dans leurs rangs contre une cinquantaines de victimes pour les anglais. Blackenay et ses hommes finissent 
+                        tout de même par capituler le surlendemain.
+                    </p>
+
+                    <p>
+                        L’épisode de Minorque donne un argument à la France et à la Grande-Bretagne pour leurs déclarations de guerre.
+                    </p>
+
+                    <p>
+                        Le 29 août, sentant que les évènements pourraient très vite basculer en sa défaveur, le roi de Prusse Frédéric II 
+                        décide de prendre les devant en envahissant la Saxe, un petit Electorat allié de la France et de la Pologne au sein 
+                        du Saint-Empire. A Dresde, la capitale saxonne, les troupes prussiennes pillent les archives de l’Electorat ainsi que 
+                        les caisses de ce petit Etat pour financer la suite de sa campagne militaire. Ainsi, le 13 septembre, une partie de 
+                        l’armée prussienne part envahir la Bohême.
+                    </p>
+
+                    <p>
+                        Le 1er octobre 1756 à lieu la première bataille terrestre en Europe de la Guerre de Sept Ans à Lobositz entre les 
+                        Prussiens et l’armée autrichienne. En parallèle, l’Electeur de Saxe – et roi de Pologne – Auguste III capitule le 
+                        14 octobre à Pirna, après une victoire prussienne écrasante. Néanmoins, Frédéric II fait fi des règles militaires 
+                        en enrôlant contre leur gré l’écrasante majorité de l’armée de Saxe. Par ce coup de force, mais aussi par le jeu 
+                        des alliances, il met les opinions publiques européennes à son dos. 
+                    </p>
+
+                    <p>
+                        A la nouvelle de ces derniers évènements, l’ambassadeur de Prusse Knyphausen en France est convoqué à Versailles, 
+                        qui prend acte d’une rupture des relations diplomatiques entre les deux Etats. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1757" id="europe-1757">
+
+                <h3>1757 : Défaites et Espoirs Prussiens</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Les troupes françaises franchissent péniblement le Rhin en avril 1757. En effet, la logistique de l’armée française 
+                        est bien trop lourde par rapport aux besoins nécessaire à l’armée. La cause est à chercher du côté de la noblesse de 
+                        cour, comme le duc d’Orléans, le prince de Condé ou le comte de la Marche, qui ne se prive pas d’un certain confort 
+                        dans les campagnes militaires, en prenant leurs suites et leurs carrosses chargés à bloc. Par ailleurs, ils rechignent 
+                        aux ordres du commandement, dirigé par le maréchal d’Estrées, faisant valoir leurs titres. Pourtant ce dernier cherche 
+                        à faire régner une discipline stricte. Il met en garde ses soldats que jamais il ne sera à la tête d’une « armée de 
+                        voleur ».
+                    </p>
+
+                    <p>
+                        En parallèle, les Anglais positionnent cinquante mille soldats à Hanovre, contre la volonté initiale des Patriotes 
+                        Whigs dont le porte-parole William Pitt avait promis au Parlement Anglais que son camp ne permettrait pas qu’une 
+                        goutte de sang anglais ne soit versé en Allemagne. Les soldats anglais seront dirigés par le général de Cumberland.
+                    </p>
+
+                    <p>
+                        Le 1er mai, soit un an jour pour jour après le pacte défensif, la France signe un traité d’alliance offensif avec 
+                        l’Autriche qui prévoit l’envoi de dix mille mercenaires allemands pour épauler l’empire des Habsbourg mais surtout 
+                        la levée d’une armée de cent cinq mille hommes pour la campagne d’Allemagne.
+                    </p>
+
+                    <p>
+                        La première bataille franco-anglaise a lieu à Hastenbeck en juillet 1757 et mène à une victoire française, quoiqu’hésitante. 
+                        Le 28 août, c’est Hameln qui tombe et le 1er août c’est au tour de Minden. Hanovre se soumet finalement le 10 août. 
+                        Malgré ces victoires, le général français d’Estrées est mené en disgrâce et sera remplacé par Richelieu, qui s’empare 
+                        de Brême, de Harbourg, du Brunswick et d’une bonne partie de l’Electorat de Hanovre. Bien moins scrupuleux que son prédécesseur, 
+                        Richelieu sera surnommé Petit Père la Maraude car ses soldats s’apparentent plus à une bande de pilleurs et de prédateurs qu’à 
+                        une véritable armée régulière.
+                    </p>
+
+                    <p>
+                        En septembre 1757, William Pitt planifie des descentes sur les côtes françaises, pour attaquer les ports servant de point 
+                        de départ aux ravitaillements partant au Canada et en Inde. Près de dix mille anglais embarquant dans une flotte de 17 
+                        vaisseaux de lignes partent pour Rochefort, près de la Rochelle. Ils capturent l’Île d’Aix, au large du port. Une fois 
+                        arrivé au large de Rochefort, les capitaines anglais hésitent et discutaillent sans prendre de décisions, alors qu’en 
+                        face les français se montrent excessivement prudent, et pensent que la capture du port est inévitable. De façon totalement 
+                        surprenante, les anglais finissent par faire demi-tour. Cette expédition aura coûté un million de livres – à peu près deux 
+                        cents millions de livres actuelles – au gouvernement de William Pitt. Au même moment, les anglais apprennent la capitulation 
+                        de la ville de Kloster Zeven près de Hanovre. Mais le gouvernement anglais rejette cette capitulation, entendant les appels 
+                        à l’aide de la Prusse. William Pitt replace alors Cumberland par un officier prussien : Ferdinand de Brunswick et Jean-Louis 
+                        Ligonier, de l’armée anglais, d’origine huguenote.
+                    </p>
+
+                    <p>
+                        La même année voit aussi l’entrée en guerre de la Suède et de la Russie contre la Prusse, qui dirigent leurs troupes vers le 
+                        Brandebourg. Qui plus est, la diète de Ratisbonne vote également l’entrée en guerre du Saint-Empire contre Frédéric. Fait notable, 
+                        certain princes protestants ont porté leur voix en faveur des Habsbourg catholiques aux détriments des Prussiens.
+                    </p>
+
+                    <p>
+                        Ainsi, un an après l’épisode saxon, Frédéric II se retrouve en difficulté sur les fronts de l’Est et du Nord. Alors que les 
+                        Russes traversent la Pologne en juillet 1757, sous le commandement de Stéphane Apraxine, s’emparant de Memel le 15 du mois, 
+                        écrasant par la suite les Prussiens à Gross-Jägersdorf, ces derniers se voient menacés à Königsberg, la principale ville de 
+                        Prusse Orientale, située sur une lagune de la mer Baltique. Plus tard ce sont les Suédois qui débarquent en Poméranie, en 
+                        Allemagne du nord, pour porter le coup de grâce. Frédéric II est alors aux abois et écrit dans une de ces correspondances : 
+                    </p>
+
+                    <p class="citation">
+                        Pour moi, menacé de naufrage, <br/>
+                        Je dois, en affrontant l’orage, <br/>
+                        Penser, vivre et mourir en roi. 
+                    </p>
+
+                    <p>
+                        Pour autant, le roi prépare depuis l’hiver dernier une offensive en Bohême. Il lance l’assaut en avril 1757 depuis la Saxe. 
+                        Bien que la Prusse connaisse des désertions en masse dans les rangs Saxons, près de cent dix mille hommes prennent part à 
+                        l’invasion de la Bohême. Le siège de Prague est sanglant pour les camps prussiens et autrichiens et marque des conflits 
+                        internes dans le commandement autrichien. Avec près de treize mille autrichiens morts ou fait prisonnier et quatorze mille 
+                        victimes prussiennes, le siège constitue une victoire à la Pyrrhus pour Frédéric II. 
+                    </p>
+
+                    <p>
+                        La bataille de Kolin un mois plus tard, le 18 juin, est une cuisante défaite pour les prussiens : à nouveau près de quatorze 
+                        mille pertes sont à déplorer de leurs côtés, quand les pertes autrichiennes sont bien moins lourdes, malgré les problèmes 
+                        d’incompétence au sommet de la hiérarchie militaire. En effet, Charles de Lorraine, notoirement connu pour son indécision, 
+                        est confirmé dans son commandement, car il s’agit du frère de l’archiduchesse Marie-Thérèse. 
+                    </p>
+
+                    <p>
+                        Au début de l’automne, L’armée franco-impériale expulse les prussiens de la Bohême. Elle marche alors en direction de Leipzig 
+                        pour rejoindre l’armée des Cercles impériaux, sous le commandement du général de Soubise, Charles de Rohan. Au même moment, 
+                        Frédéric II scinde son armée en deux : une partie combat les français et quand l’autre reste en Bohême contre les autrichiens. 
+                        La discorde est forte côté franco-autrichien : chaque commandement revendique la direction des opérations, et les français se 
+                        méfient des soldats du Saint-Empire, en raison de leur réputation peu reluisante d’indisciplinés et de déserteurs. Néanmoins, 
+                        l’arrivée des soldats de Richelieu « Petit Père la Maraude », n’est guère plus enthousiasmant que cette description des soldats 
+                        allemands. Pour Soubise cette fois-ci, cette armée à plus « la physionomie d’une bande de pillards et de meurtriers ». 
+                    </p>
+
+                    <h4>Rossbach</h4>
+
+                    <p>
+                        Ce sont vingt mille prussiens qui font face à cinquante mille français et allemand en Thuringe le 5 novembre 1757, à Rossbach. 
+                        Constatant l’infériorité numérique de son armée, Frédéric II construit une ruse en feignant la retraite de ses forces. Les 
+                        troupes franco-impériales encerclent des prussiens semblant inconscient de cet encerclement. Dans l’après-midi, une cavalerie 
+                        légère foudroie les troupes françaises et impériales. Ce sont ensuite les canons qui prennent le relais. La victoire prussienne 
+                        est hautement symbolique pour Frédéric II, est donne le premier grand tournant de la Guerre de Sept Ans. Néanmoins, la situation 
+                        des troupes prussiennes n’est pas aussi satisfaisante en Silésie, où l’armée autrichienne inflige une défaite à Schweidnitz, alors 
+                        que l’hiver approche. 
+                    </p>
+
+                    <h4>Leuthen</h4>
+
+                    <p>
+                        Pour contrer les avancée autrichiennes, Frédéric II lance alors une grande offensive pour reprendre Breslau, la capitale de la Silésie. 
+                        Charles de Lorraine, toujours aussi incompétent, choisit d’attendre Frédéric II au milieu d’une pleine, vers Leuthen. Trente-trois 
+                        mille soldats sont présents du côté prussien contre cinquante-cinq mille du côté autrichien. Encore une fois Frédéric II feinte 
+                        une première attaque d’infanterie, et de Lorraine tombe pied joint dans le piège en engageant le gros de son infanterie. La rapidité 
+                        d’action des soldats prussiens aura raison de l’armée autrichienne : près du tiers de l’armée de Marie-Thérèse est rendue invalide ou 
+                        faite prisonnière.
+                    </p>
+
+                    <p>
+                        Les deux dernières batailles, remportées par Frédéric II contre toute attente, laisse les critiques prendre de la voix contre le 
+                        commandement militaire français. Pour l’avocat du barreau de Paris Edmond Barbier, « il ne vent plus dire qu’on est fichu du vent 
+                        de bise, mais du vent de Soubise ». Par ces propos, Barbier critique l’incompétence de Versailles, qui choisit des « courtisans 
+                        pommadés et musqués » plutôt que des militaires expérimentés, en l’occurrence Charles de Lorraine ici. L’incompétence de Pompadour 
+                        et de l’abbé de Bernis sont aussi visés. 
+                    </p>
+
+                    <p>
+                        En parallèle, les finances ne sont pas bonnes pour Versailles. Louis XV tire déjà un trait dans la volonté de défendre le Canada 
+                        Français. En Angleterre, L’écho des victoires de Rossbach et de Leuthen est particulièrement fort, et donne un nouveau souffle 
+                        au gouvernement Pitt, qui ironiquement, doit son salut à l’Allemagne. Frédéric II est dès lors dépaint en « héros protestant » 
+                        même pour les plus germanophobes des patriotes anglais.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1758" id="europe-1758">
+
+                <h3>1758 : Marécage Allemand</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Au printemps 1758, suite à une série de correspondances avec William Pitt, Frédéric réussit à convaincre la Grande-Bretagne 
+                        d’envoyer un détachement militaire à Emden en Allemagne et de débloquer d’importants subsides. Cet envoi de troupe déroge une 
+                        nouvelle fois à l’engagement des Patriotes Whig auprès de la chambre des Communes. Pitt décide alors en parallèle de lancer 
+                        plusieurs expéditions dans les ports de la France métropolitaine, cette fois-ci dans la Manche, après l’humiliation subie à 
+                        Rochefort. 
+                    </p>
+
+                    <p>
+                        Une escadre britannique attaque une première fois Saint-Malo début juin, en détruisant une bonne partie des navires corsaires 
+                        français sans s’emparer de la cité. L’attaque de Cherbourg et plus fructueuse le 8 août, avec la prise symbolique des cloches 
+                        de la ville. Enfin une dernière attaque se solde par un échec cuisant à Saint-Malo en septembre cette fois-ci. Dans le détail, 
+                        les britanniques débarque près de Saint-Cast en toute discrétion, mais sont vite accueillis par les défenses malouines et les 
+                        armes du duc d’Aiguillon, qui firent environ deux mille pertes du côté anglais. 
+                    </p>
+
+                    <p>
+                        La guerre continentale reste un bourbier. Les russes lance un assaut contre la Prusse Orientale et Königsberg en janvier, laissée 
+                        presque sans défense par les Prussiens. Le 22 du mois, les troupes russes sont accueillies en fanfare dans la ville, pour éviter 
+                        toutes représailles. Un peu plus tard, au mois de mai, Frédéric II lance une campagne contre l’Autriche-Hongrie en installant un 
+                        siège à Olmütz, en Moravie. De nombreuses nations sont alliés avec l’Empire russe dans le cadre de l’invasion de la Prusse : il 
+                        y a des Cosaques, des descendant des Huns ou encore des Kalmouks. La présence de ces guerriers suscite une certaine frayeur en 
+                        Prusse. 
+                    </p>
+
+                    <p>
+                        La bataille de Zorndorf est véritable boucherie. Les combats entre Prussiens et Russes durent sans discontinuer de huit heures 
+                        du matin jusqu’à la tombée de la nuit, le plus souvent à l’arme blanche. Près de seize mille tués et blessés dans le camp russe, 
+                        contre treize mille du côté prussien. Le bilan de la bataille de Hochkirch n’est guère meilleur. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1759" id="europe-1759">
+
+                <h3>1759 : La Prusse Encerclée</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Alors que Versailles voit s’achever une annus horibilis pour l’année 1758, et que l’armée française en Westphalie est en piteux état, 
+                        névrosée par les désertions et les maladies, le duc de Choiseul est choisi pour diriger le ministère des Affaires Etrangères 
+                        en novembre 1758. Choiseul s’avère être bien plus compétent que son prédécesseur, l’abbé Bernis, et ce choix confirme l’alliance 
+                        entre la France et l’Autriche, car le duc a été l’ambassadeur de Versailles à Vienne. 
+                    </p>
+
+                    <p>
+                        Choiseul se montre d’ailleurs très actif sur le plan diplomatique. Pensant que le Canada n’est pas encore perdu, il considère que la guerre 
+                        en Amérique est bien plus importante que la guerre en Allemagne. Mais pour éviter de froisser ses Alliés autrichiens en redirigeant une 
+                        partie des moyens vers le Canada, la France, par la voix du ministère des Affaires étrangères cherche à renégocier les termes de 
+                        l’alliance offensive avec l’Autriche. Les pourparlers aboutissent le 20 mars 1759 à la signature du troisième traité de Versailles. 
+                        Le texte signé ne remet pas en cause la présence française dans le conflit sur le continent. Le plus gros changement à noter concerne 
+                        surtout le principe de séparation des conflits, qui autorise la France à négocier avec le Royaume-Uni quand elle veut, en prévenant 
+                        toutefois ses alliés autrichiens.
+                    </p>
+
+                    <p>
+                        Lors de l’année 1759, La Prusse vit plusieurs désastres et semble encerclée de toute part : le 12 août, la bataille de Kunersdorf est le 
+                        théâtre d’une nouvelle boucherie, une des pires défaites de la Prusse durant la guerre de Sept Ans. Ces derniers perdent vingt-et-un 
+                        mille hommes, soit quatre dixièmes des effectifs, au cours de la bataille. Côté austro-russe, ce sont près de seize mille pertes qui sont 
+                        à déplorer. Avant les quartiers d’hiver, c’est le général Frédéric Auguste von Finck qui se rend aux Autrichiens avec une armée de treize 
+                        mille hommes. Le royaume de Prusse vacille, mais ne tombe pas. Notamment les suédois occupe une bonne partie de la Poméranie, les russes 
+                        marchent toujours sur la Prusse Orientale et l’Autriche lorgne sur la Silésie. Mais des dissensions particulièrement fortes règnent entre 
+                        l’Autriche et la Russie, proche de la Suède. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1760" id="europe-1760">
+
+                <h3>1760 : Marécage Allemand (bis)</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Frédéric II totalise cent dix mille soldats, contre deux cent trente mille hommes du côté austro-russe. Au début de la campagne militaire 
+                        de 1760, les Autrichiens enchaînent les victoires en Silésie : à Landeshut ainsi que dans la forteresse de Glatz notamment. 
+                        Dans le même temps, des troupes prussiennes entament le siège de Dresde et les Russes lancent leur offensive vers Berlin depuis Poznań. 
+                        Puis, à Liegnitz, les Prussiens arrivent à infliger une lourde correction aux Autrichiens. Néanmoins, le 9 octobre 1760, le vent tourne 
+                        une nouvelle fois avec la nouvelle de la prise de Berlin, par les russes et les saxons. Epris de vengeance depuis le saccage de Dresde 
+                        de 1756, ces derniers dépouillent la ville, harcèlent les habitants et massacre le mobilier. Néanmoins le raid s’achève lorsque les 
+                        troupes de Frédéric retourne à la capitale.
+                    </p>
+
+                    <p>
+                        Lorsque la nouvelle de la capitulation de Montréal arrive à Londres, George III, prend la relève du trône, le 22 octobre 1760. Il n’est 
+                        pas né en Allemagne, contrairement à ses prédécesseurs de la maison de Hanovre. Le nouveau roi reste tout de même dans la continuité 
+                        politique de son père, avec toutefois un attachement moindre pour l’Electorat de Hanovre.	
+                    </p>
+
+                    <a href="../amerique/conflit_amerique.html#amerique-1759">
+
+                        <div class="blog">
+
+                            <div>
+                                <img src="../../image/Alliances_in_Europe_1740.png" width="100%">
+                            </div>
+
+                            <div class="blog_texte">
+
+                                <h5>La débâcle de la Nouvelle-France</h5>
+
+                                <p>
+                                    blog Québec
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Torgau, une ville de Saxe et le théâtre le 3 novembre 1760 d’une énième boucherie, où près de seize mille pertes autrichiennes et 
+                        vingt-cinq mille pertes prussiennes sont à déplorer. Le nombre de victime est tel que Frédéric interdit sous peine de mort de 
+                        le relever. Ces chiffres sont donc des estimations récentes.
+                    </p>
+
+                    <p>
+                        Après la campagne de 1760, la France apparait ruinée militairement et financièrement. Par la voix de Choiseul, le royaume semble 
+                        être disposé à faire la paix à la Prusse. En effet, le secrétaire d’Etat n’est pas un soutien inconditionnel à l’Autriche. Il 
+                        souhaite que la Prusse soit aussi une puissance capable de faire contrepoids aux Habsbourg en Europe Centrale, contre la volonté 
+                        d’anéantissement du royaume de Frédéric par Marie-Thérèse. Choiseul envoie alors un émissaire de paix à Londres de façon officieuse. 
+                        Maladroitement, il choisit un jacobite comme émissaire, qui ne sera d’ailleurs pas considéré par les Anglais.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1761" id="europe-1761">
+
+                <h3>1761 : l'Espagne entre en Scène</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        L’année 1761 voit arrivée tardive d’un nouveau protagoniste dans le conflit : le royaume d’Espagne. Les liens de sang entre Charles III de 
+                        Bourbon et la dynastie française sont au cœur de l’alliance entre les deux pays. Néanmoins, un membre influent de la cour de Madrid essaie 
+                        de jouer les équilibristes entre le Royaume-Uni et l’Espagne répondant au nom de Ricardo Wall. En effet, quelques contentieux existent 
+                        entre la couronne d’Espagne et la Grande-Bretagne que la nouvelle donne en Amérique du Nord pourrait réveiller : Les velléités 
+                        britanniques sur le Golfe du Mexique, l’exploitation illégale du bois du Honduras par des navires marchands britanniques, les prises 
+                        illégales de navires espagnoles par la Royal Navy ainsi qu’une demande de droit de pêche par l’Espagne à Terre-Neuve.
+                    </p>
+
+                    <p>
+                        William Pitt, notoirement connu pour son intransigeance, ne retient aucune des propositions espagnoles proposées pour régler ces contentieux 
+                        malgré la position d’équilibre tenu par Madrid depuis le conflit. Charles III envoie alors une proposition de pacte offensif à la France, 
+                        mais à un moment inopportun pour Choiseul. Au même moment, il doit en effet rencontrer Pitt pour des pourparlers de paix. Le secrétaire 
+                        d’Etat se retrouve néanmoins avec deux cartes dans sa main en cas d’échecs des négociations.
+                    </p>
+
+                    <p>
+                        La pêche apparaît, on ne le sait moins, comme un enjeu crucial pour les puissances maritimes européennes. En ayant des droits de pêches 
+                        à Terre-Neuve, la France peut « former » des matelots au conditions les plus éprouvantes de l’Atlantique Nord. La perte de ces zones de 
+                        pêche constituerait dans les faits l’arrêt de mort de la marine de guerre française.
+                    </p>
+
+                    <p>
+                        Au cours des négociations, Choiseul tend un piège à Pitt. Il soutient les réclamations de l’Espagne citées plus haut. 
+                        L’explosivité de Pitt ne tarde alors pas à éclater. Il ne montre, comme attendu, aucune transigeance vis-à-vis des 
+                        réclamations faites. La réponse est très fraîche : perte du Canada, du Sénégal, de Gorée, des droits de pêches, 
+                        destruction des fortifications de Dunkerque, reprise de Minorque et des conquêtes allemandes, retrait des troupes 
+                        anglaises en Guadeloupe et à Belle-Île uniquement si toutes les clauses du traité sont respectées. Il s’agirait 
+                        là d’une succession d’humiliations pour Versailles.  Même les modérés au sein du gouvernement anglais soulignent que 
+                        Louis XIV fut moins « hautain et dictatorial » au sommet de son orgueil. 
+                    </p>
+
+                    <p>
+                        Après cet échange houleux, les relations entre Pitt et le reste du gouvernement britannique sont extrêmement tendues. 
+                        Sur une des propositions suivantes, les Anglais acceptent le maintien des droits de pêche et accorde un abri, l’île de 
+                        Saint-Pierre, aux marins français. Choiseul commettra une erreur en rejetant ces propositions. Pitt gagne une victoire 
+                        néanmoins avant sa retraite anticipée : celle d’avoir pu mettre sur la table des conditions à la fois acceptable pour 
+                        le gouvernement mais aussi pour la nation britannique. Il dépose sa démission alors qu’il est au faîte de sa gloire. 
+                        Il restera présent dans les mémoires comme l’un des principaux protagonistes de la guerre de Sept Ans, l’intraitable 
+                        négociateur de Westminster, ainsi que l’artisan de la victoire du Royaume-Uni sur son ennemi juré : la France des 
+                        Bourbons. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1762" id="europe-1762">
+
+                <h3>1762 : Changement de camp</h3>
+
+                <div class="introduction">
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1763" id="europe-1763">
+
+                <h3>1763 : </h3>
+
+                <div class="introduction">
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="europe-1764" id="europe-1764">
+
+                <h3>1764 :</h3>
+
+                <div class="introduction">
+
+                </div>
+
+            </div>
+
+    </body>
+</html>

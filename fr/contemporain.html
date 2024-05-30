@@ -16,170 +16,172 @@ git push
         <link rel="icon" type="image/png" sizes="32x32" href="../image/sablier.png" /> <!-- de même ici -->
         <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
     </head>
-    <body id="page_home">
+    <body id="page_europe">
 
         <!--Menu en tête de site-->
 
-        <nav class="menu"> <!--Rajouter les liens des pages-->
-            <ul>
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
               <li><a href="../accueil_projet_de_langue.html">Accueil</a></li>
               <li><a href="a_propos.html">À propos</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="source.html">Sources</a></li>
-              <li><a>Langage</a>
+              <li><a href="credits.html">Crédits</a></li>
+              <li><a>Langue</a>
                 <ul class="depliant_langage">
-                    <li><a href="../en/contemporaneous.html">English</a></li>
-                    <li><a href="../de/startseite.html">Deustche</a></li>
-                    <li><a href="../es/contemporaneo.html">Español</a></li>
+                    <li><a href="../en/europe.html">English</a></li>
+                    <li><a href="../de/europa.html">Deustche</a></li>
+                    <li><a href="../es/europa.html">Español</a></li>
                 </ul> 
+              </li>
             </ul>
         </nav>
 
         <!--menu latéral -->
 
-        <div class="menu_lateral">
+        <div class="flanc_droit">
+        
+            <img src="../image/menu.png"  class="image_menu"/> 
 
-            <div class="titre-menu">
+            <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+                <li class="presentation"><a href="../accueil_projet_de_langue.html">   Présentation</a>
+                    <ul class="niveau1">
+                        <li><a href="../accueil_projet_de_langue.html/#introduction">Introduction</a></li>
+                        <li><a href="../accueil_projet_de_langue.html/#carte">Mappemonde</a></li>
+                    </ul>
+                </li>
+                <li  class="europe"><a href="europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+                    <ul class="niveau1">
+                        <li><a href="europe/puissances.html">   Puissances européennes en 1750</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
+                                <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
+                                <li><a href="fr/europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
+                                <li><a href="fr/europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
+                                <li><a href="fr/europe/puissances.html/#russie">Empire de Russie</a></li>
+                                <li><a href="fr/europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#portugal">Royaume du Portugal</a></li>
+                                <li><a href="fr/europe/puissances.html/#suede">Royaume de Suède</a></li>
+                                <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
+                                <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
+                                <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="episodes"><a href = "europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                            <!--<ul class="niveau2" >
+                                <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
+                                    </ul>
+                                </li>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                    </ul>
+                </li>
+                <li  class="amerique"><a href="amerique_nord.html">   En Amérique du Nord</a>
+                    <ul class="niveau1">
+                        <li><a href="amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
+                        <li><a href="amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
+                    </ul>
+                </li>
+                <li class="inde"><a href="inde.html">   En Inde</a>
+                    <ul class="niveau1">
+                        <li><a href="inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
+                        <li><a href="inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
+                    </ul>
+                </li>
+                <li  class="ailleurs"><a href="ailleurs.html">  Le conflit ailleurs dans le monde</a>
+                    <ul class="niveau1">
+                        <li><a href="ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                            <!--<ul class = "niveau2">
+                                <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
+                                <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
+                            </ul>-->
+                        <li><a href="ailleurs.html/#senegal">au Sénégal</a></li>
+                    </ul>
+                </li>
+                <li  class="issue"><a href = "issue.html">   Issue</a>   
+                    <ul class="niveau1">
+                        <li><a href = "issue.html/#paris">Traité de Paris</a></li>
+                        <li><a href = "issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
+                        <li><a href = "issue.html/#hambourg">Traité de Hambourg</a></li>
+                    </ul>
+                </li> 
+                <li class="impacts"><a href ="impacts.html">   Impacts de la Guerre de Sept Ans</a>
+                    <ul class="niveau1">
+                        <li><a href="impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
+                        <li><a href="impacts/culture.html">Dans la culture</li></li>
+                    </ul>            
+                </li>
+                <li><a href = "contemporains.html">Evènements contemporains au conflit</a></li>
+            </nav>
+        </div>
 
-                <h3>Menu</h3>
+        <div class="cadre">
+
+            <div class="introduction">
+
+                <p></p>
+
+                <p></p>
+
+                <div class="illustration">
+                    <img src="../image/ornement4.png" width ="200px"/>
+                </div>
+
+                <p></p>
+
+                <p></p>
+        
+                <div class = "retour" >
+                    <a href="../accueil_projet_de_langue.html">Retour à la page principale</a>
+                </div>
 
             </div>
 
-        <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
-            <li><a href="../accueil_projet_de_langue.html">Présentation</a>
-                <ul class="depliant_presentation">
-                    <li><a href="../accueil_projet_de_langue.html/#introduction">Introduction</a></li>
-                    <li><a href="../accueil_projet_de_langue.html/#carte">Mappemonde</a></li>
-                </ul>
-            </li>
-            <li><a href="europe.html">En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
-                <ul class="depliant_europe">
-                    <li><a href="europe/puissances.html">Puissances européennes en 1750</a>
-                        <ul class="depliant_puissances">
-                            <li><a href="europe/puissances.html/#france">Royaume de France</a></li>
-                            <li><a href="europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
-                            <li><a href="europe/puissances.html/#prusse">Royaume de Prusse</a></li>
-                            <li><a href="europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
-                            <li><a href="europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
-                            <li><a href="europe/puissances.html/#russie">Empire de Russie</a></li>
-                            <li><a href="europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
-                            <li><a href="europe/puissances.html/#portugal">Royaume du Portugal</a></li>
-                            <li><a href="europe/puissances.html/#suede">Royaume de Suède</a></li>
-                            <li><a href="europe/puissances.html/#pologne">République des Deux Nations</a></li>
-                            <li><a href="europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
-                            <li><a href="europe/puissances.html/#saxe">Electorat de Saxe</a></li>
-                        </ul>
-                    </li>
-                    <li><a href = "europe/diplomatie.html">Relations diplomatiques</a>
-                        <ul class="depliant_diplomatie">
-                            <li><a href="europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
-                            <li><a href="europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
-                            <li><a href="europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
-                            <li><a href="europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href = "europe/episodes.html">Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
-                        <ul class="depliant_episodes">
-                            <li><a href = "europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
-                                </ul>
-                                -->
-                            </li>
-                            <li><a href = "europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
-                                </ul>
-                                -->
-                            </li>
-                            <li><a href = "europe/episodes.html/#russie_brandebourg">Offensive russe dans le Brandebourg</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
-                                </ul>
-                                -->
-                            </li>
-                            <li><a href = "europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
-                                </ul>
-                                -->
-                            </li>
-                            <li><a href = "europe/episodes.html/#naval">Batailles navales en Europe</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
-                                    <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
-                                </ul>
-                                -->
-                            </li>
-                            <li><a href = "europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
-                                <!--
-                                <ul class="depliant3">
-                                    <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
-                                </ul>
-                                -->
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="amerique_nord.html">En Amérique du Nord</a>
-                <ul class="depliant_amerique">
-                    <li><a href="amerique/contexte_amerique.html">Contexte</a></li>
-                    <li><a href="amerique/acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
-                    <li><a href="amerique/conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
-                </ul>
-            </li>
-            <li><a href="inde.html">En Inde</a>
-                <ul class="depliant_inde">
-                    <li><a href="inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
-                    <li><a href="inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
-                </ul>
-            </li>
-            <li><a href="ailleurs.html">Le conflit ailleurs dans le monde</a>
-                <ul class="depliant_ailleurs">
-                    <li><a href="ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
-                        <ul class = "depliant_espagnol">
-                            <li><a href="ailleurs.html/#philippines">aux Philippines</a></li>
-                            <li><a href="ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
-                        </ul>
-                    <li><a href="ailleurs.html/#senegal">au Sénégal</a></li>
-                </ul>
-            </li>
-            <li><a href = "issue.html">Issue</a>   
-                <ul class="depliant_issue">
-                    <li><a href = "fr/issue.html/#paris">Traité de Paris</a></li>
-                    <li><a href = "fr/issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
-                    <li><a href = "fr/issue.html/#hambourg">Traité de Hambourg</a></li>
-                </ul>
-            </li> 
-            <li><a href ="impacts.html">Impacts de la Guerre de Sept Ans</a>
-                <ul class="depliant_impacts">
-                    <li><a href="impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
-                    <li><a href="impacts/culture.html">Dans la culture</li></li>
-                </ul>            
-            </li>
-            <li><a href = "contemporains.html">Evènements contemporains au conflit</a></li>
-        </nav>
+        </div>
 
     </body>
 </html>

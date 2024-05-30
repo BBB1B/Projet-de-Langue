@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device_width, initial-scale = 1, viewport-fit = cover"> <!--Pour les mobiles exclusivement-->
+        <meta name = "title" content="La Guerre de Sept Ans - Europe">
+        <title>La Guerre de Sept Ans</title> <!-- titre apparaisant sur l'onglet-->
+        <link rel = "stylesheet" href = "../../CSS/style.css"> <!-- changer l'arborescence si besoin ici-->
+        <link rel="icon" type="../../image/png" sizes="32x32" href="../../image/sablier.png" /> <!-- Glisser une image/logo de taille 32x32 qui apparaîtra dans le moteur de recherche -->
+        <meta name="description" content="Projet scolaire à propos de la guerre de Sept Ans. Présentation intéractive du conflit en Europe, en Amérique du Nord et dans le sous-continent inden ; site en français, anglais, espagnol et allemand."> <!-- Description apparaissant sur le moteur de recherche -->
+        <script src="../../JS/jquery-3.7.1.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="../../JS/script.js"></script>
+    </head>
+    <body class="painting-main" id="page_puissance" >
+
+        <!--Menu en tête de site-->
+
+        <nav> <!--Rajouter les liens des pages-->
+            <ul class="menu">
+
+              <li><a href="../../accueil_projet_de_langue.html">Accueil</a></li>
+              <li><a href="../a_propos.html">À propos</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../source.html">Sources</a></li>
+              <li><a href="../credits.html">Crédits</a></li>
+              <li><a>Langue</a>
+                <ul class="depliant_langage">
+                    <li><a href="../../en/america/conflicts.html">English</a></li>
+                    <!--<li><a href="../../de/">Deustche</a></li>-->
+                    <li><a href="../../es/america/conflictos_america.html">Español</a></li>
+                </ul> 
+              </li>
+            </ul>
+        </nav>
+
+        <!--menu latéral -->
+
+        <div class="flanc_droit">
+        
+            <img src="../../image/menu.png"  class="image_menu"/> 
+
+            <nav class="menu_deroulant_lateral"> <!--Rajouter les liens des pages-->
+                <li class="presentation"><a href="../../accueil_projet_de_langue.html">   Présentation</a>
+                    <ul class="niveau1">
+                        <li><a href="../../accueil_projet_de_langue.html/#introduction">Introduction</a></li>
+                        <li><a href="../../accueil_projet_de_langue.html/#carte">Mappemonde</a></li>
+                    </ul>
+                </li>
+                <li  class="europe"> <a href="../europe.html">   En Europe</a> <!--Une carte avec des liens vers le paragraphe précis-->
+                    <ul class="niveau1">
+                        <li><a href="../europe/puissances.html">   Puissances européennes en 1750</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/puissances.html/#france">Royaume de France</a></li>
+                                <li><a href="fr/europe/puissances.html/#grande-bretagne">Royaume de Grande-Bretagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#prusse">Royaume de Prusse</a></li>
+                                <li><a href="fr/europe/puissances.html/#habsbourg">Empire de Habsbourg</a></li>
+                                <li><a href="fr/europe/puissances.html/#saint_empire">Saint-Empire Romain Germanique</a></li>
+                                <li><a href="fr/europe/puissances.html/#russie">Empire de Russie</a></li>
+                                <li><a href="fr/europe/puissances.html/#espagne">Royaume d'Espagne</a></li>
+                                <li><a href="fr/europe/puissances.html/#portugal">Royaume du Portugal</a></li>
+                                <li><a href="fr/europe/puissances.html/#suede">Royaume de Suède</a></li>
+                                <li><a href="fr/europe/puissances.html/#pologne">République des Deux Nations</a></li>
+                                <li><a href="fr/europe/puissances.html/#hanovre">Electorat de Hanovre</a></li>
+                                <li><a href="fr/europe/puissances.html/#saxe">Electorat de Saxe</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="diplomatie"><a href = "../europe/diplomatie.html">   Relations diplomatiques</a>
+                            <!--<ul class="niveau2">
+                                <li><a href="fr/europe/diplomatie.html/#franco-anglaise">Rivalité franco-anglaise</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#prusso-autrichienne">Rivalité prusso-autrichienne</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#anglo-prussienne">Relations anglo-prussiennes</a></li>
+                                <li><a href="fr/europe/diplomatie.html/#franco-autrichienne">Relations franco-autrichiennes</a></li>
+                            </ul>-->
+                        </li>
+                        <li class="episodes"><a href = "../europe/episodes.html">   Episodes de la guerre de Sept Ans</a> <!--On ne va pas faire un article pour chaque bataille, ce n'est pas l'objet du projet ...-->
+                            <!--<ul class="niveau2" >
+                                <li><a href = "fr/europe/episodes.html/#saxe_prusse">Invasion de la Saxe par la Prusse</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#lobositz">Lobositz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#pirna">Pirna</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#prague">Prague</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kolin">Kolin</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rossbach">Rossbach</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#maxen">Maxen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#torgau">Torgau</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#autriche_silesie">Offensive autrichienne En Silésie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#leuthen">Leuthen</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#liegnitz">Liegnitz</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#hochkirch">Hochkirch</a></li>
+                                    </ul>
+                                </li>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#zorndorf">Zorndorf</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#kunersdorf">Kunersdorf</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#france_westphalie">Offensive française en Westphalie</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#hastenbeck">Hastenbeck</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#warburg">Warburg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#minden">Minden</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#rheinberg">Rheinberg</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#krefeld">Krefeld</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#naval">Batailles navales en Europe</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#minorque">Minorque</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#carthagene">Carthagène</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#quiberon">Quiberon</a></li>
+                                        <li><a href = "fr/europe/batailles.html/#belle-ile">Belle-Île</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href = "fr/europe/episodes.html/#portugal_espagne">Invasion du Portugal par l'Espagne</a>
+                                    <ul class="depliant3">
+                                        <li><a href = "fr/europe/batailles.html/#almeida">Almeida</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                    </ul>
+                </li>
+                <li  class="amerique"><a href="../amerique_nord.html">   En Amérique du Nord</a>
+                    <ul class="niveau1">
+                        <li><a href="contexte_amerique.html">Contexte</a></li>
+                        <li><a href="acteurs_amerique.html">Les Amérindiens et les puissances colonisatrises</a></li>
+                        <li><a href="conflit_amerique.html">Déroulé de la guerre en Amerique</a></li>
+                    </ul>
+                </li>
+                <li class="inde"><a href="../inde.html">   En Inde</a>
+                    <ul class="niveau1">
+                        <li><a href="../inde.html/#compagnies">Les compagnies coloniales européennes</a></li>
+                        <li><a href="../inde.html/#deroule">Déroulé de la guerre en Inde</a></li>
+                    </ul>
+                </li>
+                <li  class="ailleurs"><a href="../ailleurs.html">  Le conflit ailleurs dans le monde</a>
+                    <ul class="niveau1">
+                        <li><a href="../ailleurs.html/#empire_espagnol">Dans l'empire colonial espagnol</a></li>
+                            <!--<ul class = "niveau2">
+                                <li><a href="fr/ailleurs.html/#philippines">aux Philippines</a></li>
+                                <li><a href="fr/ailleurs.html/#amerique_sud_antilles">en Amérique du Sud et aux Antilles</a></li>
+                            </ul>-->
+                        <li><a href="../ailleurs.html/#senegal">au Sénégal</a></li>
+                    </ul>
+                </li>
+                <li  class="issue"><a href = "../issue.html">   Issue</a>   
+                    <ul class="niveau1">
+                        <li><a href = "../issue.html/#paris">Traité de Paris</a></li>
+                        <li><a href = "../issue.html/#hubertsbourg">Traité de Hubertsbourg</a></li>
+                        <li><a href = "../issue.html/#hambourg">Traité de Hambourg</a></li>
+                    </ul>
+                </li> 
+                <li class="impacts"><a href ="../impacts.html">   Impacts de la Guerre de Sept Ans</a>
+                    <ul class="niveau1">
+                        <li><a href="../impacts/geopolitique.html">Bouleversements des équilibres géopolitiques</a></li>
+                        <li><a href="../impacts/culture.html">Dans la culture</li></li>
+                    </ul>            
+                </li>
+                <li><a href = "../contemporains.html">Evènements contemporains au conflit</a></li>
+            </nav>
+        </div>
+
+            <div class="cadre_titre"> 
+
+                <h1>Le déroulé de la guerre en Amérique</h1>
+
+            </div>
+
+            <div class="cadre panel" data-painting="main-episode-amerique">
+
+                <h3 id="introduction">L'histoire de la fin de la Nouvelle-France</h3>
+
+                <div class="introduction">
+
+                    <p>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1754" id="amerique-1754">
+
+                <h3>1754 : Les Premières Escarmouches</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        La bataille de Jumonville Glen – si on peut appeler ainsi les évènements qui ont lieu dans cette forteresse française 
+                        située dans l’arrière-pays de la Pennsylvanie – marque vraisemblablement le coup d’envoi de la guerre de Sept Ans. 
+                        Comme dit dans la page principale de ce site, les Canadiens ont construit ces forts dans l’optique de contenir 
+                        l’expansionnisme anglais sur la vallée de l’Ohio, également peuplée d’Amérindiens. Les Français considère ces terres 
+                        comme les leurs, mais aucun traité entre puissances européennes n’a jusqu’à présent statué sur l’appropriation de ces 
+                        territoires. Du côté Anglais, c’est George Washington lui-même, âgé de seulement vingt-ans seulement lorsqu’il mène 
+                        l’expédition, qui dirige une milice de Virginie tuant le capitaine de ce fort. Les circonstances troubles de ce meurtre 
+                        cette viendra déclencher l’affaire Jumonville, sur laquelle la presse française écrira abondamment et versera son venin 
+                        sur les Anglais.  
+                    </p>
+
+                    <p>
+                        George Washington est à ses début un assez mauvais chef de guerre. Ces décisions hasardeuses dans le fort de Jumonville Glen 
+                        finiront, comme l’écrira Horace Walpole un peu plus tard par « [mettre] le Monde en feu ». Mais Washington n’est pas le seul 
+                        responsable de la montée des tensions. Les ripostes françaises puis les réactions françaises viendront tour à tour exacerber 
+                        les tensions déjà vives depuis la signature du traité d’Utrecht en 1713. Par la suite, il viendra se réfugier dans le fort 
+                        Necessity, construit à la hâte au milieu d’une clairière par Washington et ses troupes. Ce fort ne possède aucun avantage 
+                        stratégique et se révèle vite être dans une position géographique intenable. Lorsque les Français arrive sur le site, ils 
+                        infligent la seule défaite de la carrière militaire de George Washington, qui sera dès lors fait prisonnier.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1755" id="amerique-1755">
+
+                <h3>1755 : L’Exil des Acadiens, Vaudreuil et les « Sauvages »</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        L’année 1755 voit l’intensification des ingérences de la Royal Navy dans le golfe du Saint-Laurent. Quelques vaisseaux 
+                        sont capturés par les Anglais le 8 juin, ce qui déclenchera la fureur des Français du Québec. Par ailleurs, en 1755 
+                        débute véritablement la déportation de masse des Acadiens, vivant principalement en Nouvelle-Ecosse et à l’est de Québec. 
+                        Ce nettoyage ethnique sera plus tard connu sous le nom de Grand Dérangement. Au total, ce seront près de huit mille Acadiens 
+                        qui seront déportés de force vers la Nouvelle-Angleterre et la Grande-Bretagne, et cinq mille personnes contraintes de fuir 
+                        vers le Québec.
+                    </p>
+
+                    <p>
+                        Après l’échec de l’échec de l’expédition Braddock en juillet 1755 pour prendre le fort Duquesne, dont les vestiges subsistent 
+                        toujours au centre de la ville de Pittsburgh, la plupart des chefs Amérindiens de la région s’entendent avec les Français 
+                        pour lancer des raids contre les colons de l’Ohio dès l’automne. En mars 1755, un raid d’une violence encore inouïe, où 
+                        les victimes sont scalpées, attaque le fort Bull, près d’Oswego. Les français feront exploser la garnison de poudre dans 
+                        les entrepôts, ce qui réduira le fort en poussière. Pendant l’hiver qui suit, des raids amérindiens d’une rare violence 
+                        rendent la vie des colons de l’Ohio infernale. C’est toute l’intention de Pierre de Rigaud de Vaudreuil, alors gouverneur 
+                        de la Nouvelle-France, qui utilise la violence et la terreur des « Sauvages » pour, dit-il, « faire désirer [aux Anglais] 
+                        le retour à la paix »
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1756" id="amerique-1756">
+
+                <h3>1756 : Les Mutations du Conflit</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        En parallèle du début de la guerre en Europe, Londres prépare la campagne d’Amérique septentrionale. William Pitt et le duc 
+                        de Newcastle prévoit treize mille hommes pour les troupes régulières et douze mille pour les troupes provinciales, n’ayant 
+                        pas nécessairement l’envie ni la motivation de se battre au côté des troupes envoyées par Londres, qui leur impose par 
+                        ailleurs d’être subordonnés aux métropolitains et d’avoir la même discipline militaire. Les colons sont jaloux de certaines 
+                        de leur « libertés » : Ils bénéficient de privilèges et d’exemptions fiscales en tout genre et se montrent hostiles aux 
+                        décisions venant de la métropole, souvent dédaigneuse. 
+                    </p>
+
+                    <a href="../europe/episodes.html#europe-1756">
+
+                        <div class="blog">
+                    
+                            <div>
+                                <img src="../../image/Alliances_in_Europe_1740.png" width="100%">
+                            </div>
+        
+                            <div class="blog_texte">
+        
+                                <h5>la bataille de Minorque</h5>
+        
+                                <p>
+                                    blog Episodes de la guerre en Europe
+                                </p>
+        
+                            </div>
+        
+                        </div>
+
+                    </a>
+
+                    <p>
+                        En août 1756 a lieu la prise du fort d’Oswego par le marquis Montcalm, alors fraîchement débarqué pour diriger les troupes 
+                        de la Nouvelle-France. Ce dernier suit les plans de Vaudreuil. La bataille est une lourde défaite pour les anglais, pour 
+                        qui mille cinq cents soldats seront fait prisonniers. Qui plus est, la plupart des tués sont des fugitifs retrouvés et 
+                        massacrés par les amérindiens alliés avec les français. 
+                    </p>
+
+                    <p>
+                        La violence des Amérindiens ébranle la cohésion des troupes françaises. Notamment, Montcalm et les soldats métropolitains 
+                        s’insurgent contre cette cruauté. D’autres causes beaucoup plus sombres pourraient cependant être évoquées. En effet, une 
+                        pratique courante des puissances anglaises et françaises est d’offrir de l’alcool aux chefs amérindiens pour prendre l’ascendant 
+                        lors des négociations. Cet alcool est aussi consommé par les Amérindiens lors des raids, ce qui pourrait expliquer en partie 
+                        les atrocités commises par ces derniers lors de la bataille d’Oswego.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1757" id="amerique-1757">
+
+                <h3>1757 : <em>Annus horribilis, Annus mirabilis</em></h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Au début de l’année 1757, Vaudreuil et son frère lancent des attaques contre les forts anglais du lac Saint-Sacrement dans le suc du 
+                        lac Champlain, entre l’actuel Vermont et la colonie de New York. Les principaux sites en ligne de mire sont les forts William Henry 
+                        et Edward. L’influence de Vaudreuil auprès des amérindiens est alors à son plus haut. Les Iroquois le nomment d’ailleurs Onontio, 
+                        signifiant « la Grande Montagne ».
+                    </p>
+
+                    <p>
+                        Pour l’expédition, ce sont près de mille huit cents amérindiens, représentant trente-trois Nations, et six mille canadiens et français 
+                        qui prennent part au combat. Le roman et l’adaptation cinématographique Le dernier des Mohicans relate d’ailleurs en début de récit 
+                        la bataille du fort William Henry, qui est un véritable massacre. En effet, les chefs amérindiens – se sentant trahis par Montcalm qui 
+                        offre les honneurs de la guerre aux Anglais – font fi des objections et massacrent les Anglais en fuite. 
+                    </p>
+
+                    <p>
+                        En parallèle, un début de disette s’installe en Nouvelle-France. Constatant le manque de nourriture dans les garnisons, Montcalm 
+                        décider d’arrêter l’expédition à ce fort contrairement aux ordres donnés par Vaudreuil. Les colons de Nouvelle-Angleterre 
+                        continuent pourtant de vivre sous la terreur des raids lancés par les français et les amérindiens durant tout l’hiver.
+                    </p>
+
+                    <p>
+                        En 1757, Les Britanniques, Loudoun et Wolfe et tête, lancent une expédition contre le cœur de la Nouvelle-France : le Canada Français. 
+                        Ils tentent une première fois d’atteindre Louisbourg, sur l’île de Cape Breton, mais les conditions météorologiques, brumeuses et 
+                        venteuses, rendent l’entreprise risquée. Sans compter les dix-huit frégates fraîchement venues de la métropole. Nonobstant, les 
+                        Français connaissent la précarité de leur situation. Ainsi le marquis de Moncalm écrira élégamment : « Tout le monde ici fait 
+                        <em>caca</em> [souligné] dans ses culottes pour Louisbourg ». 
+                    </p>
+
+                    <p>
+                        En 1757, la France reste relativement en position de domination vis-à-vis des redcoats. Mais la disette qui perdurera les 
+                        années suivantes changent en partie la donne.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1758" id="amerique-1758">
+
+                <h3>1758 : le Grand Basculement</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        En 1755, Pitt déplorait que le « peuple d’Amérique [eût été] trop longtemps insulté, trop longtemps négligé, trop longtemps oublié ». 
+                        Pourtant en 1758, ce sont cinquante mille soldats britanniques qui se battent outre-Atlantique. Pendant la guerre de Succession 
+                        d’Autriche, les dépenses annuelles de Londres pour la guerre sont de neuf millions de livres, alors que pendant la guerre de Sept 
+                        Ans, les dépenses sont portées à dix-huit millions de livres, soit près de deux milliards actuels. En passant, la fiscalité s’est 
+                        considérablement alourdie pour les sujets britanniques, sur le foncier, avec l’augmentation de la land tax, et les biens de consommation, 
+                        avec l’excise. Pour autant, la santé financière du royaume est nettement meilleure que sur le continent. 
+                    </p>
+
+                    <a href="../europe/puissances.html#angleterre">
+
+                        <div class="blog">
+
+                            <div>
+                                <img src="../../image/Alliances_in_Europe_1740.png" width="100%">
+                            </div>
+
+                            <div class="blog_texte">
+
+                                <h5>La Grande-Bretagne et l'empire financier de la City</h5>
+
+                                <p>
+                                    blog puissances
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+                        Ces politiques fiscales favorisent aussi l’aliénation des colonies anglaises, notamment d’Amérique, 
+                        qui voit une contestation naissante de la fiscalité imposée par Londres.
+                    </p>
+
+                    <p>
+                        A l’été 1758, le vent sent mauvais en Nouvelle-France : « peu de Sauvages, […] peu de vivres, […] peu de récoltes » écrit le 
+                        futur capitaine Bougainville, qui est alors un aide-de-camp sous les ordres indirects de Montcalm. Ces derniers ne savent 
+                        toujours pas que près de cinquante mille redcoats naviguent vers la Belle-Province ou marchent vers le nord.
+                    </p>
+
+                    <p>
+                        Lors de la bataille du Fort Carillon, en juillet 1758, les Français sont terrifiés à l’idée d’affronter les anglais, et à raison. 
+                        Leur nombre est assez faible, et les bateaux des redcoats prennent toute la largeur du lac Champlain sur trois lieues. D’une 
+                        façon totalement surprenante, ce sont pourtant les français qui gagnent : lord Howe, un des commandants britanniques lors de 
+                        l’attaque, est tués lors de la première escarmouche. Par la suite, le régiment se retrouve être totalement désorganisé. Il faut 
+                        noter que peu d’amérindiens ont pris part aux combats : la plupart était iroquois et combattaient aux cotés des Anglais, seuls 
+                        une quinzaine combattait sous le drapeau français. Les Anglais ne dénombrent pas moins de cinq cents tués dans leurs rangs, et 
+                        près d’un millier de blessés. Il s’agit d’une défaite stratégique de taille pour eux. Mais l’écrasante supériorité numérique 
+                        anglaise ne tardera pas à produire ses effets.
+                    </p>
+
+                    <p>
+                        Des navires français sont envoyés durant toute l’année 1757 pour protéger le Canada, par petits convois. Cette stratégie s’avèrera 
+                        pour ravitailler les places fortes du littoral, mais semble dérisoire par rapport aux moyens mis par l’Angleterre dans cette guerre 
+                        outre-Atlantique. Ainsi, le 8 juin, les troupes anglaises débarque sur l’Île Royale, s’engagent dans un siège de la citadelle de 
+                        Louisbourg de huit semaines, jusqu’au hissage du drapeau blanc. Les huit mille Français de l’Île de Cape Breton sont faits 
+                        prisonniers ou sont contraints de quitter les lieux.
+                    </p>
+
+                    <p>
+                        En novembre 1758, c’est une autre expédition, celle du commandant Forbes, qui prend possession du Fort Duquesne et garantit le 
+                        contrôle britannique de l’Ohio. La route que prend le commandant est digne d’un parcours d’obstacle. Son détachement traverse les 
+                        sombres forêts de Pennsylvanie. Lui-même est aussi gravement malade d’une maladie de peau et est atteint de dysenterie. Il est 
+                        d’ailleurs en partie transporté en civière par les troupes qu’il commande. Sur la route, près de huit cents soldats sont pris 
+                        dans une embuscade dressée par les Français et les Amérindiens. Il faut préciser que les Indiens de l’Ohio se sont ralliés très 
+                        tôt à la Nouvelle-France, pour s’opposer aux diverses spoliations anglaises dans la région. Mais un des objectifs de l’expédition 
+                        est aussi diplomatique. 
+                    </p>
+
+                    <p>
+                        Les britanniques se sont en effet engagé depuis 1757 dans de tumultueuses négociations qui finiront par aboutir avec les 
+                        Delawares de l’Est et leur chef : Teedyuscung, qui a alors une grande aura auprès des Nations de toute la région. Le 
+                        retournement de situation dans l’Ohio apparaît au grand jour à l’automne 1758, même si la nouvelle donne reste encore 
+                        inconnue pour le commandant Forbes. A la nouvelle de ces négociations, les Indiens de l’Ohio font massivement défection 
+                        dans le camp français. Lorsque Forbes arrive au fort Duquesne, ils ne sont plus que 300 à garder la place. Celle-ci est 
+                        d’ailleurs prise le 25 novembre 1758, et sera renommée fort Pitt. Le village qui s’établira autour de l’ancienne forteresse 
+                        s’appellera Pittsburgh. 
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1759" id="amerique-1759">
+
+                <h3>1759 : la Grande Débâcle</h3>
+
+                <div class="introduction">
+
+                    <p>
+                        Au printemps de l’année 1759, l’avancée des troupes britanniques semble irrépressible. Les redcoats prennent un à un les forts 
+                        censés protéger la Nouvelle-France. Outre le contentieux qui déchire Vaudreuil et Montcalm, les deux hommes forts du Canada, 
+                        les Français n’ont quasiment plus aucun soutien chez les Amérindiens. Les Six Nations Iroquoises se sont d’ailleurs ralliées 
+                        aux Anglais avant que ces derniers le sachent. 
+                    </p>
+
+                    <p>
+                        Le fort Niagara, point d’entrée incontournable pour la Nouvelle-France, tombe aux mains des Anglais le 24 juillet 1759. La chute 
+                        du Canada semble dès lors inéluctable et les Français décide de détruire préventivement les fort Carillon et Frédéric.
+                    </p>
+
+                    <p>
+                        Fin juin, le siège de Québec commence également, mené par le général Wolfe, avec près de neuf mille hommes, contre quinze 
+                        mille hommes du côté québécois. Des vieillards et des enfants ont pris des armes de fortune pour défendre la cité. Auparavant, 
+                        un embargo a déjà été imposé à la colonie, qui a souffert des mauvaises récoltes des années précédentes et de la terrible 
+                        disette de l’hiver 1758-1759. Mais Wolfe décide de bombarder tous azimuts la ville un mois après le début du siège. 
+                        Succédant à un premier assaut sanglant repoussé par les français, les doutes côté anglais persistent et grandissent. 
+                        En parallèle, le général Wolfe a une santé déclinante. En septembre, néanmoins, les Redcoats tentent un débarquement 
+                        sur Québec. Ils réussissent à mettre en ordre de bataille quatre mille soldats sur les plaines au sud-ouest de la ville. 
+                        La bataille des plaines d’Abraham sera sans doute la plus brève de la guerre de Sept Ans. L’issue y fut pliée en moins de 
+                        30 minutes. Même si le nombre de victimes des deux côtés est limité et relativement équivalent, la façon dont Montcalm a 
+                        précipité l’assaut a été désastreux pour le camp français. la résistance québécoise durera quelques jours avant la reddition 
+                        complète du cœur de la Nouvelle-France.
+                    </p>
+
+                    <p>
+                        Il s’agira bien d’une année crépusculaire pour le Canada Français
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1760" id="amerique-1760">
+
+                <h3>1760 : la Fin de la Nouvelle-France</h3>
+
+                <div class="introduction">
+
+                    <p>Dès le mois d’avril 1760, lorsque les rives du fleuve Saint-Laurent se libèrent de la glace : le général Lévis se dirige vers Québec 
+                        avec sept mille deux cents hommes. Les troupes des deux côtés ne sont pas au meilleur de leur forme. Près de sept cents soldats 
+                        britanniques meurent de maladie, de scorbut et de fièvre entre septembre 1759 et avril 1760. Dans ce contexte, la bataille de 
+                        Sainte-Foy dans les environs de Québec consacre la dernière victoire française. Mais l’arrivée d’une escadre britannique à 
+                        Québec stoppe toute tentatives de reprises de la ville pour Lévis. Le déséquilibre des forces est alors frappant : près de 
+                        deux mille cinq cents hommes stationnent à Montréal alors que dix-huit mille Anglais sont prêts à descendre vers les derniers 
+                        territoires encore contrôlés par la France au Québec.
+                    </p>
+
+                    <p>
+                        Aucun combat n’a eu lieu à Montréal. Les quelques soldats qui gardent encore la ville se résout à la reddition. Le 8 septembre 1760, 
+                        c’est Vaudreuil qui signera la capitulation du Canada français, et la fin de la présence française sur le continent nord-américain.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="panel" data-painting="amerique-1763" id="amerique-1763">
+
+                <h3>1763 : la révolte de Pontiac</h3>
+
+                <div class="introduction">
+
+                </div>
+
+                
+                <p></p>
+
+                <p></p>
+
+                <div class="illustration">
+                    <img src="../../image/ornement11.png" width ="200px"/>
+                </div>
+
+                <p></p>
+
+                <p></p>
+
+                <div class = "retour" >
+                    <a href="../../accueil_projet_de_langue.html">Retour à la page principale</a>
+                </div>
+
+            </div>
+
+    </body>
+</html>

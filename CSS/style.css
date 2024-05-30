@@ -248,6 +248,7 @@ body > .panel{
 {
     text-align: center;
     font-family: "Bricktown";
+    font-variant-ligatures: no-common-ligatures
 }
 
 .cadre p, .panel p
@@ -289,12 +290,14 @@ p a:hover{
     font-weight: bold;
     font-size: 250%;
     color:white;
+    font-variant-ligatures: no-common-ligatures
 }
 
 .cadre_titre h2{
     font-family:"bricktown";
     font-weight: bold;
     color:white;
+    font-variant-ligatures: no-common-ligatures
 }
 
 /*images*/
@@ -788,6 +791,78 @@ circle.hoverable-almeida:hover{
     background-image: url("fond_saint-empire.jpg");
 }
 
+.painting-main-episode-europe{
+    background-image: url("fond_europe_main.jpg");
+}
+
+.painting-europe-1756{
+    background-image: url("fond_europe_1756.jpg");
+}
+
+.painting-europe-1757{
+    background-image: url("fond_europe_1757.jpg");
+}
+
+.painting-europe-1758{
+    background-image: url("fond_europe_1758.jpg");
+}
+
+.painting-europe-1759{
+    background-image: url("fond_europe_1759.jpg");  
+}
+
+.painting-europe-1760{
+    background-image: url("fond_europe_1760.jpg");    
+}
+
+.painting-europe-1761{
+    background-image: url("fond_europe_1761.jpg");    
+}
+
+.painting-europe-1762{
+    background-image: url("fond_saint-empire.jpg");    
+}
+
+.painting-europe-1763{
+    background-image: url("fond_saint-empire.jpg");    
+}
+
+.painting-main-episode-amerique{
+    background-image: url("fond_amerique_main.jpg");    
+}
+
+.painting-amerique-1754{
+    background-image: url("fond_amerique_1754.jpg");    
+}
+
+.painting-amerique-1755{
+    background-image: url("fond_amerique_1755.jpg");    
+}
+
+.painting-amerique-1756{
+    background-image: url("fond_amerique_1755.jpg");    
+}
+
+.painting-amerique-1757{
+    background-image: url("fond_amerique_1757.jpg");    
+}
+
+.painting-amerique-1758{
+    background-image: url("fond_amerique_1757.jpg");    
+}
+
+.painting-amerique-1759{
+    background-image: url("fond_amerique_1759.jpg");    
+}
+
+.painting-amerique-1760{
+    background-image: url("fond_amerique_1759.jpg");    
+}
+
+.painting-amerique-1763{
+    background-image: url("fond_amerique_1759.jpg");    
+}
+
 /* Pour les blogs */
 
 .blog{
@@ -836,4 +911,25 @@ circle.hoverable-almeida:hover{
     text-indent: unset;
     font-style: italic;
     margin-left: 50px;
+}
+
+.illustration img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.retour{
+    text-align: center;
+    color: #b1b1b1;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.retour a:hover{
+    color:#ffffff
+}
+
+.retour a:visited{
+    color:inherit
 }
